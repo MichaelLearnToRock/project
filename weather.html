@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>天气预报</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/weather.js"></script>
+	<!--这个是获取ip的，别删-->
+	<script type="text/javascript" src="http://www.coding123.net/getip.ashx?js=1"></script>
+	<link rel="stylesheet" href="css/weather.css" />
+</head>
+<body>
+	<div id="container">
+		<div class="headBox">
+			<div class="headDetail">
+				<a class="logo">
+					<img src="img/headLogo.png" alt="墨迹天气">
+				</a>
+				<div class="headDetailRight">
+					<a href="javascript:;">首页</a>
+					<a href="javascript:;">天气</a>
+					<a href="javascript:;">资讯</a>
+					<a href="javascript:;">商城</a>
+					<a href="javascript:;">下载</a>
+					<a href="index.html">返回聚美</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<!-------------------搜索框------------------------------->
+			<div class="titleSearch">
+				<div id="searchTextBox">
+					<input type="text" id="searchText" placeholder="请填写城市名" />
+				</div>
+				<div id="searchBtnBox"><span>搜索</span></div>
+				<!-------------------搜索框------------------------------>
+			</div>
+			<div class="content">
+				<div class="today">
+					<div class="detail1">
+						<div class="picture"><img src="" alt="" /></div>
+						<ul>
+						<li><span id="nowcity">当前城市：</span><span id="nowcityContent"></span></li>
+						<li><span id="date">日期:</span><span id="dateContent"></span></li>
+						<li><span id="week">星期:</span><span id="weekContent"></span></li>
+						</ul>
+						<ul>
+						<li><span id="wind">风速:</span><span id="windContent"></span></li>
+						<li><span id="temperature">温度:</span><span id="temperatureContent"></span></li>
+						<li><span id="weather">天气:</span><span id="weatherContent"></span></li>
+						</ul>
+						<div class="coat"><img src=""></div>
+					</div>
+					<h2>未来五天天气预报</h2>
+					<div class="detail2">
+						<ul class="futureWeather">
+							<!--<li class="oneW"></li>
+							<li class="twoW"></li>
+							<li class="threeW"></li>
+							<li class="fourW"></li>
+							<li class="fiveW"></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+		</div>
+	</div>
+</body>
+</html>

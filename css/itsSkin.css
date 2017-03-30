@@ -1,0 +1,2018 @@
+/******************************* CSS Reset **************************************/
+html,
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+input,
+dl,
+img {
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+}
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+body {
+  font-family: "微软雅黑";
+}
+img {
+  border: none;
+  /*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em {
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "\00A0";
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+/******************************* CSS Reset **************************************/
+/******************************* Common *****************************************/
+.spaceX {
+  width: 100%;
+  height: 15px;
+  line-height: 15px;
+  clear: both;
+}
+.spaceY {
+  width: 15px;
+  height: 100%;
+  line-height: 100%;
+  clear: both;
+}
+.activeLi {
+  background: #666666;
+  border: solid 1px #BBB;
+  border-bottom: none;
+  font-weight: 900;
+}
+/******************************* Common *****************************************/
+#contain {
+  width: 100%;
+}
+#fixedMenu {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: -40px;
+  left: 0;
+  z-index: 500;
+  /*********IE8-的浏览器中，相对定位和绝对定位中的z-index属性必须设置在父容器上才有效。*********/
+  background-color: #333;
+  /*visibility: hidden;*/
+}
+#fixedMenu .menuCenter {
+  width: 1226px;
+  height: 40px;
+  margin: 0 auto;
+}
+#fixedMenu .menuCenter ul {
+  height: 40px;
+  margin-left: 5%;
+}
+#fixedMenu .menuCenter ul li {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  cursor: pointer;
+}
+#fixedMenu .menuCenter ul li a {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+}
+#fixedMenu .menuCenter ul .baby a {
+  width: 110px;
+  height: 40px;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-right: 0;
+  padding: 0;
+}
+#fixedMenu .menuCenter ul .baby img {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+}
+#fixedMenu .menuCenter ul .baby a:hover img {
+  opacity: 0.7;
+}
+#fixedMenu .menuCenter li a:hover {
+  color: #ababab;
+  text-decoration: none;
+}
+/*******************上滑网页时搜索框显示*****************/
+/********* 右侧固定盒子**********/
+.fixedBox {
+  width: 40px;
+  height: 100%;
+  line-height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #444851;
+  z-index: 1400;
+}
+.fixedBox .rightTop {
+  width: 40px;
+  line-height: 54%;
+  height: 54%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  /********* 右侧固定盒子登录**********/
+  /********* 右侧固定盒子登录**********/
+  /********* 右侧固定盒子购物车**********/
+  /********* 右侧固定盒子购物车**********/
+}
+.fixedBox .rightTop .rightLogin {
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+}
+.fixedBox .rightTop .rightLogin a {
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #444851;
+  overflow: hidden;
+}
+.fixedBox .rightTop .rightLogin a div {
+  width: 18px;
+  height: 19px;
+  line-height: 19px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.fixedBox .rightTop .rightLogin a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightTop .rightLogin a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px 0;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightTop .rightCart {
+  width: 40px;
+  height: 140px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.fixedBox .rightTop .rightCart a {
+  width: 40px;
+  height: 133px;
+  z-index: 1499;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail {
+  width: 26px;
+  height: 133px;
+  border-top: solid 1px #575b64;
+  border-bottom: solid 1px #575b64;
+  margin: 0 auto;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .cartImg {
+  width: 23px;
+  height: 18px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  background-position: 0 -29px;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .text {
+  display: block;
+  width: 16px;
+  height: 48px;
+  line-height: 16px;
+  margin: 40px 0 0 5px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .cart_num {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: #ed145b;
+  text-align: center;
+  line-height: 21px;
+  margin: 13px 0 0 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.fixedBox .rightTop .rightCart a:hover {
+  background-color: #ED145B;
+  text-decoration: none;
+}
+.fixedBox .rightTop .rightCart a:hover .cartImg {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 9px;
+  background-position: -33px -29px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightWallet {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  color: #d8d8d8;
+  margin-bottom: 4px;
+}
+.fixedBox .xuanFuWallet,
+.fixedBox .xuanFuHeart,
+.fixedBox .xuanFuFoot,
+.fixedBox .xuanFuRequire,
+.fixedBox .xuanFuBack {
+  width: 92px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0px;
+  left: -122px;
+  background: #444851;
+  opacity: 0;
+  z-index: 1600;
+  transition: all 0.2s ease 0s;
+  color: #d8d8d8;
+  text-align: center;
+  font-size: 12px;
+  visibility: hidden;
+}
+.fixedBox .rightWallet:hover .xuanFuWallet,
+.fixedBox .rightHeart:hover .xuanFuHeart,
+.fixedBox .rightFoot:hover .xuanFuFoot,
+.fixedBox .rightRequire:hover .xuanFuRequire,
+.fixedBox .rightBack:hover .xuanFuBack {
+  visibility: visible;
+  opacity: 1;
+  left: -92px;
+}
+.fixedBox .xuanFuTwoCode {
+  width: 148px;
+  height: 175px;
+  line-height: 175px;
+  position: absolute;
+  top: -152px;
+  left: 80px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  z-index: 1600;
+  transition: all 0.2s ease 0s;
+  text-align: center;
+  font-size: 12px;
+  visibility: hidden;
+  padding: 10px;
+  z-index: 10;
+}
+.fixedBox .xuanFuTwoCode img {
+  width: 148px;
+  height: 175px;
+  line-height: 175px;
+}
+.fixedBox .rightTwoCode:hover .xuanFuTwoCode {
+  visibility: visible;
+  opacity: 1;
+  left: -169px;
+  top: -155px;
+}
+.fixedBox .fixedBoxSanjiao {
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  position: absolute;
+  top: 17px;
+  left: 92px;
+  border-style: solid;
+  border-color: transparent transparent transparent #444851;
+  border-width: 5px 0 5px 5px;
+  z-index: 1600;
+}
+.fixedBox .twoCodeSanjiao {
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  position: absolute;
+  top: 172px;
+  right: -5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 5px 0 5px 5px;
+  z-index: 1600;
+}
+.fixedBox .rightWallet a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightWallet a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightWallet a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px -57px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightWallet a div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -57px;
+}
+.fixedBox .rightHeart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+}
+.fixedBox .rightHeart a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightHeart a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightHeart a:hover div {
+  width: 18px;
+  height: 15px;
+  line-height: 15px;
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px -85px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightHeart a div {
+  width: 18px;
+  height: 15px;
+  line-height: 15px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -85px;
+}
+.fixedBox .rightFoot {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.fixedBox .rightFoot a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightFoot a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightFoot a:hover div {
+  width: 15px;
+  height: 24px;
+  line-height: 24px;
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -32px -110px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightFoot a div {
+  width: 15px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -110px;
+}
+.rightBottom {
+  width: 40px;
+  height: 19%;
+  line-height: 19%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.rightBottom .rightTwoCode {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.rightBottom .rightTwoCode a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.rightBottom .rightTwoCode a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightTwoCode a:hover div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 11px;
+  background-position: 0 -302px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightTwoCode a div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  background-position: 0 -302px;
+}
+.rightBottom .rightRequire {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.rightBottom .rightRequire a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.rightBottom .rightRequire a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightRequire a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 12px;
+  background-position: -33px -175px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightRequire a div {
+  width: 15px;
+  height: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -175px;
+}
+.rightBottom .rightBack {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+.rightBottom .rightBack a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+}
+.rightBottom .rightBack a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightBack a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 12px;
+  background-position: -33px -201px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightBack a div {
+  width: 17px;
+  height: 14px;
+  line-height: 14px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -201px;
+}
+.text {
+  display: block;
+  width: 16px;
+  height: 48px;
+  line-height: 16px;
+  margin: 40px 0 0 5px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.cart_num {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: #ed145b;
+  text-align: center;
+  line-height: 21px;
+  margin: 13px 0 0 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.fixedShopping {
+  width: 40px;
+  height: 133px;
+  z-index: 1499;
+  display: block;
+  background-color: #444851;
+  position: fixed;
+  overflow: hidden;
+  top: 170px;
+  right: 0;
+  display: none;
+}
+.fixedShopping > a {
+  width: 40px;
+  height: 133px;
+  z-index: 1499;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fixedShopping > a:hover {
+  background: #ED145B;
+  text-decoration: none;
+}
+.fixedShopping > a:hover .fixedShoppingDetail .cartImg {
+  background: url("../img/rightFixed.png");
+  background-position: -33px -29px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedShopping > a .fixedShoppingDetail {
+  width: 26px;
+  height: 133px;
+  border-top: solid 1px #575b64;
+  border-bottom: solid 1px #575b64;
+  margin: 0 auto;
+}
+.fixedShopping > a .fixedShoppingDetail .cartImg {
+  width: 23px;
+  height: 18px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  background-position: 0 -29px;
+}
+.fixedShopping > a .fixedShoppingDetail .text1 {
+  display: block;
+  width: 16px;
+  height: 48px;
+  line-height: 16px;
+  margin: 40px 0 0 5px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+.fixedShopping > a .fixedShoppingDetail .cart_num {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: #ed145b;
+  text-align: center;
+  line-height: 21px;
+  margin: 13px 0 0 3px;
+  cursor: pointer;
+  color: #fff;
+}
+/********* 右侧固定盒子购物车**********/
+/******************************* Head 导航nav*******************************************/
+/********* 1. 头部Head设置 **********/
+#head {
+  width: 100%;
+  height: 128px;
+  background: #f7f7f7;
+  /********* 2. 头部Head中导航Nav设置 **********/
+  /*************logo***********************/
+}
+#head #nav {
+  background: #eeeeee;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /********* 3. 头部Head中导航Nav  NavCenter 设置 **********/
+}
+#head #nav .navCenter {
+  width: 1100px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #eeeeee;
+  /********* 4. 头部Head中导航Nav  NavCenter ul 设置 **********/
+  /*************右侧超链接***********************/
+  /*************右侧超链接***********************/
+}
+#head #nav .navCenter .navDetail1 {
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  background: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#head #nav .navCenter .navDetail1 ul {
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  /********* 头部Head中导航Nav  送至北京内容 设置 **********/
+  /********* 头部Head中导航Nav  送至北京内容 设置 **********/
+}
+#head #nav .navCenter .navDetail1 ul li {
+  font-size: 12px;
+  color: #000000;
+  height: 28px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  border: 0px 1px 0px 0px;
+}
+#head #nav .navCenter .navDetail1 ul li a {
+  margin: 0px 10px;
+  padding: 0px;
+  border: 0px;
+  font-size: 12px;
+  color: #6c6c6c;
+  text-decoration: none;
+}
+#head #nav .navCenter .navDetail1 ul li a:hover {
+  font-size: 12px;
+  color: #ea175c;
+}
+#head #nav .navCenter .navDetail1 ul li a span {
+  display: inline-block;
+  font-size: 12px;
+  color: #000000;
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi {
+  font-size: 12px;
+  color: #000000;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px 1px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 228px;
+  z-index: 5;
+  /********* table外的div **********/
+  /********* table外的div **********/
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child {
+  display: block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  background: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  color: #6c6c6c;
+  z-index: 5;
+  cursor: text;
+  overflow: hidden;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span {
+  display: inline-block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  background: #eeeeee;
+  font-size: 12px;
+  color: #6c6c6c;
+  cursor: text;
+  overflow: hidden;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span #sanjiao {
+  display: inline-block;
+  width: 0px;
+  height: 0;
+  line-height: 0;
+  margin: 12px 0px 0px 60px;
+  padding: 0px;
+  border: 4px 4px 0 4px;
+  border-style: solid;
+  border-color: #666 transparent transparent transparent;
+  transform: rotate(0deg);
+  transition: all 0.5s ease 0s;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span span {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 5px;
+  display: inline-block;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span:hover {
+  background: #ffffff;
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px gainsboro;
+  background: #fff;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span:hover #sanjiao {
+  background: #ffffff;
+  transform: rotate(180deg);
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span span {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+  border: 0px;
+  display: inline-block;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send {
+  width: 470px;
+  height: 26px;
+  position: absolute;
+  top: -244px;
+  left: 0px;
+  cursor: text;
+  border: none;
+  z-index: 4;
+  /********* table**********/
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send:hover + div > span {
+  background: #ffffff;
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px gainsboro;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send:hover + div > span #sanjiao {
+  transform: rotate(180deg);
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent {
+  width: 490px;
+  height: 248px;
+  background: #ffffff;
+  cursor: text;
+  border: solid 1px #ededed;
+  border-top: none;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent th {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent td {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: solid 1px #ededed;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent td a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#head #nav .navCenter .navDetail2 {
+  width: 794px;
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  top: 0px;
+  left: 306px;
+  background: #eeeeee;
+  z-index: 10;
+}
+#head #nav .navCenter .navDetail2 ul {
+  float: right;
+}
+#head #nav .navCenter .navDetail2 ul li {
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  margin: 7px 0px;
+  padding: 0px;
+  border: 0px;
+  float: right;
+}
+#head #nav .navCenter .navDetail2 ul li a {
+  font-size: 12px;
+  color: #a1a1a1;
+  margin: 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
+#head #nav .navCenter .navDetail2 ul li a:hover {
+  font-size: 12px;
+  color: #ea175c;
+  text-decoration: none;
+}
+#head #nav .navCenter .navDetail2 ul li:first-child a:hover {
+  font-size: 12px;
+  color: #1d50d7;
+  font-weight: 900;
+}
+#head #nav .navCenter .navDetail2 ul .phone {
+  width: 84px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #ea175c;
+  border-left: solid 1px #A1A1A1;
+}
+#head #nav .navCenter .navDetail2 ul .phone a {
+  width: 64px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #ea175c;
+  text-decoration: none;
+}
+#head #nav .navCenter .navDetail2 ul .phone a img {
+  vertical-align: middle;
+  padding-right: 2px;
+}
+#head #nav .navCenter .navDetail2 ul .koubei {
+  width: 84px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #000000;
+  border-right: solid 1px #A1A1A1;
+}
+#head #nav .navCenter .navDetail2 ul .koubei a {
+  width: 73px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 0;
+}
+#head #nav .navCenter .navDetail2 ul .koubei a img {
+  vertical-align: middle;
+  padding-right: 2px;
+}
+#head .head_wrapper {
+  width: 1090px;
+  min-width: 1090px;
+  height: 100px;
+  margin: 0 auto;
+}
+#head .head_wrapper .head_cart {
+  margin-top: 30px;
+  float: right;
+  width: 60%;
+  height: 32px;
+}
+#head .head_wrapper .head_cart .cart_box {
+  width: 166px;
+  height: 32px;
+  position: relative;
+  float: right;
+  z-index: 4;
+}
+#head .head_wrapper .head_cart .cart_box > a {
+  color: #565656;
+  width: 166px;
+  height: 32px;
+  font-size: 13px;
+  font-family: "宋体";
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  background: url("../img/itsSkin/maincart.png") no-repeat;
+}
+#head .head_wrapper .head_cart .cart_box > a .cart_logtext {
+  line-height: 32px;
+  padding-left: 45px;
+}
+#head .head_wrapper .head_cart .cart_box > a .nav_cart_num {
+  display: block;
+  width: 18px;
+  height: 20px;
+  top: -13px;
+  left: 27px;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  background: url("../img/itsSkin/numicon.png") no-repeat;
+}
+#head .head_wrapper .global_logo {
+  width: 250px;
+  height: 88px;
+  display: inline-block;
+  background: url("../img/itsSkin/home_logo.png") no-repeat;
+}
+.global_body {
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding-bottom: 1px;
+  position: relative;
+}
+.global_body .detail_wrap {
+  width: 1090px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin: 0 auto 60px;
+}
+.global_body .detail_wrap .deal_main {
+  width: 1090px;
+  height: 607px;
+  background: #fff;
+  padding-bottom: 30px;
+  border-top: none;
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+.global_body .detail_wrap .deal_main .deal_left {
+  width: 702px;
+  height: 577px;
+  float: left;
+  position: relative;
+}
+.global_body .detail_wrap .deal_main .deal_left .deal_titles {
+  width: 702px;
+  height: 132px;
+  background: #f8f8f8;
+  padding: 5px 0 20px 48px;
+}
+.global_body .detail_wrap .deal_main .deal_left .deal_titles .long_title {
+  width: 630px;
+  font-size: 18px;
+  overflow: hidden;
+  height: 107px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+.global_body .detail_wrap .deal_main .deal_left .deal_titles .long_title strong {
+  color: #ec2b8c;
+}
+.global_body .detail_wrap .deal_main .deal_left .preview_product {
+  width: 702px;
+  height: 402px;
+  position: relative;
+}
+.global_body .detail_wrap .deal_main .deal_left .preview_product .numtimer_box {
+  background: #323337;
+  position: absolute;
+  top: -13px;
+  left: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 18px;
+  z-index: 1;
+}
+.global_body .detail_wrap .deal_main .deal_left .preview_product .numtimer_box > span {
+  color: #fff;
+  font-size: 14px;
+}
+.global_body .detail_wrap .deal_main .deal_left .preview_product .preview_product_id {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border: 1px solid #efefef;
+}
+.global_body .detail_wrap .deal_main .deal_left .preview_product .preview_product_id img {
+  width: 1000px;
+  height: 400px;
+  margin-left: -150px;
+  vertical-align: bottom;
+  text-align: center;
+}
+.global_body .detail_wrap .deal_main .deal_left .product_info {
+  width: 702px;
+  height: 43px;
+  padding: 18px 0 0 54px;
+  height: 25px;
+}
+.global_body .detail_wrap .deal_main .deal_left .product_info .product_info_list {
+  overflow: hidden;
+  width: 450px;
+  height: 25px;
+  float: left;
+}
+.global_body .detail_wrap .deal_main .deal_left .product_info .product_info_list a {
+  width: 42px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  color: #5c5c5c;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 6px;
+  height: 23px;
+  line-height: 23px;
+  border: 1px solid #e1e0e0;
+  padding: 0 8px;
+  font-size: 13px;
+}
+.global_body .detail_wrap .deal_main .deal_left .product_info .product_info_list a:hover {
+  background: #ed145b;
+  color: #fff;
+}
+.global_body .detail_wrap .deal_main .deal_right {
+  height: 457px;
+  float: left;
+  margin-left: 30px;
+  width: 330px;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first {
+  width: 330px;
+  height: 131px;
+  padding: 25px 0;
+  border-bottom: 1px dotted #c5c5c5;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first a {
+  text-decoration: none;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first a img {
+  width: 160px;
+  height: 80px;
+  float: left;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first .flag_box_main {
+  width: 150px;
+  height: 42px;
+  color: #424242;
+  overflow: hidden;
+  margin-top: 22px;
+  float: right;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first .flag_box_main img {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  vertical-align: bottom;
+  overflow: hidden;
+  margin-right: 10px;
+  border: 1px solid #eee;
+  float: left;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first .flag_box_main .area {
+  float: left;
+  list-style: none;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first .flag_box_main .area li:nth-child(1) {
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 20px;
+  width: 78px;
+  height: 20px;
+  word-break: break-all;
+  overflow: hidden;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_first .flag_box_main .area li:nth-child(2) {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+  width: 78px;
+  height: 20px;
+  word-break: break-all;
+  overflow: hidden;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second {
+  width: 330px;
+  height: 94px;
+  padding: 25px 0 10px;
+  border-bottom: 1px dotted #c5c5c5;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module {
+  width: 330px;
+  padding-bottom: 20px;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .jumei_price {
+  float: left;
+  color: #232323;
+  font-size: 38px;
+  line-height: 1;
+  font-family: arial;
+  margin-right: 10px;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .jumei_price em {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: arial;
+  vertical-align: top;
+  line-height: 1.4;
+  margin-right: 5px;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .market_price {
+  display: list-item;
+  float: left;
+  text-decoration: line-through;
+  color: #676767;
+  margin-right: 15px;
+  margin-top: 13px;
+  font-size: 14px;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .market_price em {
+  font-weight: 400;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .price_detail {
+  margin-top: 13px;
+  position: relative;
+  z-index: 3;
+  float: right;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_second .price_module .price_detail span {
+  color: #dedede;
+  cursor: pointer;
+  font-size: 12px;
+}
+.global_body .detail_wrap .deal_main .deal_right .people {
+  width: 330px;
+  height: 58px;
+  padding: 18px 0 20px;
+  border-bottom: 1px dotted #c5c5c5;
+  color: #999;
+}
+.global_body .detail_wrap .deal_main .deal_right .people .num {
+  background-position: 0 3px;
+  margin-right: 40px;
+  padding-left: 23px;
+  float: left;
+}
+.global_body .detail_wrap .deal_main .deal_right .people .num em {
+  color: #fd4d87;
+  font-weight: 700;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_third {
+  width: 330px;
+  height: 102px;
+  padding: 25px 0;
+  border-bottom: 1px dotted #c5c5c5;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_third .mail_policy {
+  color: #8e8e8e;
+  font-size: 13px;
+  padding-top: 13px;
+  float: left;
+  margin-bottom: 0;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_third .mail_policy dt {
+  color: #8e8e8e;
+  font-size: 13px;
+  float: left;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_third .mail_policy dd {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_fourth {
+  border-bottom: none;
+  padding: 25px 0;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_fourth .shop_cart {
+  display: inline-block;
+  margin-right: 0;
+  width: 183px;
+  height: 41px;
+  line-height: 41px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ed145b;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_fourth .shop_cart span:nth-child(1) {
+  display: inline-block;
+  line-height: 41px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.global_body .detail_wrap .deal_main .deal_right .r_fourth .shop_cart span:nth-child(2) {
+  width: 9px;
+  height: 14px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 10px;
+  vertical-align: middle;
+  background: url("../img/itsSkin/detail_gt.png") no-repeat;
+  background-position: -2px -18px;
+}
+.global_body .detail_wrap .deal_prefer {
+  width: 1090px;
+  height: 120px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 20px 0;
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder {
+  width: 270px;
+  height: 80px;
+  border-right: 1px solid #eee;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder .item {
+  width: 272px;
+  height: 160px;
+  top: 0;
+  position: absolute;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder .item .item_show {
+  width: 200px;
+  height: 80px;
+  background: url("../img/itsSkin/middle.jpg");
+  margin: 0 auto;
+  cursor: pointer;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder .item .item_desp {
+  width: 200px;
+  height: 80px;
+  position: relative;
+  left: 0;
+  margin: 0 auto;
+  background: url("../img/itsSkin/middle.jpg");
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder .item:hover {
+  transition: all 0.5s ease 0.1s;
+  top: -80px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(1) .item .item_show {
+  background-position: 0 -220px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(1) .item .item_desp {
+  background-position: -2px -6px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(2) .item .item_show {
+  background-position: -240px -220px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(2) .item .item_desp {
+  background-position: -242px -6px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(3) .item .item_show {
+  background-position: -460px -220px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(3) .item .item_desp {
+  background-position: -460px -6px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(4) {
+  border-right: none;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(4) .item .item_show {
+  background-position: -692px -220px;
+}
+.global_body .detail_wrap .deal_prefer .list_rightborder:nth-child(4) .item .item_desp {
+  background-position: -692px -6px;
+}
+.global_body .detail_wrap .deal_detail {
+  width: 1090px;
+  padding: 0;
+  margin: 20px auto;
+  background: #fff;
+  position: relative;
+  box-shadow: 1px 1px 4px #d3d3d3;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav {
+  width: 1090px;
+  height: 52px;
+  overflow: hidden;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav .inner {
+  width: 1090px;
+  margin: 0 auto;
+  background: #f6f6f6;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  height: 52px;
+  overflow: hidden;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav .inner ul {
+  width: 577px;
+  height: 52px;
+  float: left;
+  list-style: none;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav .inner ul li {
+  width: 107px;
+  height: 52px;
+  float: left;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav .inner ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 14px;
+  color: #333;
+  border-right: 1px solid #e5e5e5;
+  margin-top: 2px;
+}
+.global_body .detail_wrap .deal_detail .deal_tab_nav .inner ul li:nth-child(4) {
+  width: 150px;
+}
+.global_body .detail_wrap .deal_detail .content_nav_con {
+  width: 1090px;
+  height: 1317px;
+  padding-top: 50px;
+}
+.global_body .detail_wrap .deal_detail .content_nav_con .consumer_box {
+  width: 922px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/itsSkin/detail_content.jpg") no-repeat;
+  background-position: left -641px;
+}
+.global_body .detail_wrap .deal_detail .content_nav_con .content_text {
+  width: 790px;
+  margin: 20px auto 0;
+}
+.global_body .detail_wrap .deal_detail .content_nav_con .content_text img {
+  width: 790px;
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe {
+  width: 1090px;
+  padding: 30px 0;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spxq {
+  width: 1090px;
+  padding-top: 50px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spxq .spxq_box {
+  width: 922px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/itsSkin/detail_content.jpg") no-repeat;
+  background-position: left -111px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spxq .content_text {
+  width: 790px;
+  margin: 20px auto 0;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spxq .content_text img {
+  width: 790px;
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spsp {
+  width: 1090px;
+  padding-top: 50px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spsp .spsp_box {
+  width: 922px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/itsSkin/detail_content.jpg") no-repeat;
+  background-position: left -307px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spsp .content_text {
+  width: 790px;
+  margin: 20px auto 0;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .spsp .content_text img {
+  width: 790px;
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe > img {
+  margin: 10px 90px;
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .cjwt {
+  width: 1090px;
+  padding-top: 50px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .cjwt .gyhwg_box {
+  width: 922px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/itsSkin/detail_content.jpg") no-repeat;
+  background-position: left -565px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .cjwt .content_img {
+  width: 920px;
+  height: 434px;
+  margin: 20px auto 0;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .cjwt .content_img > a {
+  width: 920px;
+  height: 286px;
+  display: block;
+  text-decoration: none;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .cjwt .content_img > a img {
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm {
+  width: 1090px;
+  height: 330px;
+  padding-top: 50px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm .lxjm_box {
+  width: 922px;
+  height: 50px;
+  margin: 0 auto;
+  background: url("../img/itsSkin/detail_content.jpg") no-repeat;
+  background-position: left -476px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm .content_img {
+  width: 922px;
+  position: relative;
+  margin: 20px auto 0;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm .content_img img {
+  vertical-align: bottom;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm .content_img .clickHelp {
+  display: block;
+  position: absolute;
+  top: 122px;
+  font-size: 16px;
+  color: #5c4bb3;
+  text-decoration: underline;
+  left: 370px;
+}
+.global_body .detail_wrap .deal_detail .goodsDe .lxjm .content_img .clickService {
+  display: block;
+  position: absolute;
+  top: 122px;
+  font-size: 16px;
+  color: #5c4bb3;
+  text-decoration: underline;
+  left: 735px;
+}
+/*******************购物车*****************/
+/*******************************************footer*****************************************/
+#footer {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  /*******************footerTop*****************/
+  /*******************footerTop*****************/
+  /*******************footer细节*****************/
+  /*******************footer图片****************/
+  /*******************footer图片****************/
+  /*******************footer关于聚美*****************/
+  /*******************footer关于聚美*****************/
+  /*******************footerButtom*****************/
+}
+#footer .footTop {
+  width: 100%;
+  height: 186px;
+  line-height: 186px;
+}
+#footer .footTop .footTopCenter {
+  width: 1090px;
+  height: 186px;
+  line-height: 186px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 30px 0 15px;
+}
+#footer .footTop .footTopCenter a {
+  width: 170px;
+  height: 140px;
+  line-height: 140px;
+  color: #999;
+  font-size: 14px;
+  display: block;
+  float: left;
+  line-height: 18px;
+  overflow: hidden;
+  text-align: center;
+}
+#footer .footTop .footTopCenter a:nth-child(1) {
+  width: 130px;
+}
+#footer .footTop .footTopCenter a:nth-child(3) {
+  width: 160px;
+}
+#footer .footTop .footTopCenter a:nth-child(4) {
+  width: 168px;
+}
+#footer .footTop .footTopCenter a:nth-child(6) {
+  width: 158px;
+}
+#footer .footTop .footTopCenter a:nth-child(7) {
+  width: 134px;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg1 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  background: url("../img/bottom/footerTop.png");
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg2 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -64px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg3 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -128px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg4 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -190px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg5 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -253px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg6 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -316px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg7 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -379px 0;
+}
+#footer .footTop .footTopCenter a span {
+  color: #333;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail {
+  width: 100%;
+  height: 195px;
+  line-height: 195px;
+}
+#footer .footDetail .footDetailContent {
+  width: 1090px;
+  height: 165px;
+  line-height: 165px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: solid 1px #ccc;
+  overflow: hidden;
+  /*******************footer服务保障*****************/
+  /*******************footer服务保障*****************/
+  /*******************footer使用帮助 支付方式 配送方式*****************/
+  /*******************footer使用帮助 支付方式 配送方式*****************/
+  /*******************footer售后服务*****************/
+  /*******************footer售后服务*****************/
+  /*******************footer二维码*****************/
+  /*******************footer二维码*****************/
+}
+#footer .footDetail .footDetailContent ul {
+  width: 156px;
+  height: 143px;
+  line-height: 143px;
+  padding-left: 20px;
+  float: left;
+  overflow: hidden;
+  font-size: 12px;
+}
+#footer .footDetail .footDetailContent ul li a {
+  width: 160px;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  transform: translate(0);
+  transition: all 0.4s linear;
+}
+#footer .footDetail .footDetailContent ul li a:hover {
+  transform: translate(10px, 0);
+  color: #f16c96;
+  font-weight: lighter;
+}
+#footer .footDetail .footDetailContent .footService {
+  width: 160px;
+  overflow: hidden;
+  color: #666;
+}
+#footer .footDetail .footDetailContent .footService li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+}
+#footer .footDetail .footDetailContent .footService a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footHelp li:nth-child(1),
+#footer .footDetail .footDetailContent .footPay li:nth-child(1),
+#footer .footDetail .footDetailContent .footSend li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+}
+#footer .footDetail .footDetailContent .footHelp a,
+#footer .footDetail .footDetailContent .footPay a,
+#footer .footDetail .footDetailContent .footSend a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footDetailContent .footHelp li:nth-child(1),
+#footer .footDetail .footDetailContent .footDetailContent .footPay li:nth-child(1),
+#footer .footDetail .footDetailContent .footDetailContent .footSend li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#footer .footDetail .footDetailContent .footDetailContent .footHelp a,
+#footer .footDetail .footDetailContent .footDetailContent .footPay a,
+#footer .footDetail .footDetailContent .footDetailContent .footSend a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footAfterSale {
+  width: 118px;
+  height: 143px;
+  line-height: 143px;
+  padding-left: 16px;
+  float: left;
+  zoom: 1;
+  overflow: hidden;
+}
+#footer .footDetail .footDetailContent .footAfterSale li:nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+}
+#footer .footDetail .footDetailContent .footAfterSale a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footTwoCode {
+  width: 239px;
+  height: 146px;
+  line-height: 146px;
+  float: left;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul {
+  width: 93px;
+  height: 146px;
+  line-height: 146px;
+  text-align: center;
+  padding-left: 10px;
+  margin-top: 0;
+  color: #666;
+  float: left;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .phoneJumei,
+#footer .footDetail .footDetailContent .footTwoCode ul .jumeiWechat {
+  width: 83px;
+  height: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .firstTWoCode,
+#footer .footDetail .footDetailContent .footTwoCode ul .secondTWoCode {
+  width: 83px;
+  height: 18px;
+  line-height: 18px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .firstTWoCode span {
+  background: url("../img/bottom/firstCode.png") 0 -423px no-repeat;
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 3px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .secondTWoCode span {
+  width: 78px;
+  height: 78px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 3px;
+  background: url("../img/bottom/secondCode.png");
+}
+#footer .footImg {
+  width: 100%;
+  height: 95px;
+  line-height: 95px;
+  background: url("../img/bottom/footerImg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#footer .footAbout {
+  width: 100%;
+  line-height: 48px;
+  height: 48px;
+  background: #333;
+}
+#footer .footAbout .footAboutCenter {
+  width: 1090px;
+  height: 48px;
+  line-height: 48px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#footer .footAbout .footAboutCenter a {
+  display: inline-block;
+  padding-right: 12px;
+  color: #FFFFFF;
+  line-height: 48px;
+  font-family: "arial narrow";
+  font-size: 12px;
+  cursor: pointer;
+}
+#footer .footBottom {
+  width: 100%;
+  line-height: 214px;
+  height: 214px;
+  background: #424242;
+}
+#footer .footBottom .footBottomCenter {
+  width: 1090px;
+  line-height: 214px;
+  height: 214px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#footer .footBottom .footBottomCenter p a {
+  cursor: pointer;
+  color: #ccc;
+}
+#footer .footBottom .footBottomCenter p:nth-child(1) {
+  width: 1090px;
+  height: 46px;
+  line-height: 46px;
+  padding: 14px 0 18px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #ccc;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) {
+  width: 1090px;
+  height: 56px;
+  line-height: 56px;
+  /*******************footerButtom*****************/
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a1 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a2 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -126px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a3 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -252px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a4 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -378px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a5 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -504px 0;
+}
+/*******************footer*****************/

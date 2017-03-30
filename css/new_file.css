@@ -1,0 +1,96 @@
+    /********* 左侧固定盒子**********/
+    #contain .floatBox {
+        width: 60px;
+        height: 250px;
+        position: fixed;
+        top: 100px;
+        right: 85%;
+        z-index: 1000;
+        display: none;
+    }
+    .floatBox .floatBoxContent {
+        width: 60px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .floatBox .floatBoxContent .home {
+        width: 60px;
+        height: 45px;
+        font-size: 14px;
+        background: #fe6397;
+        color: #fff;
+        text-align: center;
+        padding-top: 14px;
+        border-bottom: 1px solid #fff;
+    }
+    .floatBox .floatBoxContent ul {
+        width: 60px;
+        height: 186px;
+        border-bottom: 2px solid #fe6397;
+    }
+    .floatBox .floatBoxContent li {
+        width: 60px;
+        height: 62px;
+    }
+    .floatBox .floatBoxContent li a {
+        width: 60px;
+        height: 62px;
+        display: block;
+        color: #8f8f8f;
+    }
+    .floatBox .floatBoxContent .floatDay a {
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: 0 0;
+    }
+    .floatBox .floatBoxContent ul .floatDay:hover a {
+        width: 60px;
+        height: 62px;
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: -90px 0;
+        display: block;
+    }
+    .floatBox .floatBoxContent ul .floatNews a {
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: 0 -124px;
+    }
+    .floatBox .floatBoxContent ul .floatNews:hover a {
+        width: 60px;
+        height: 62px;
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: -90px -124px;
+        display: block;
+    }
+    .floatBox .floatBoxContent ul .floatBrand a {
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: 0 -186px;
+    }
+    .floatBox .floatBoxContent ul .floatBrand:hover a {
+        width: 60px;
+        height: 62px;
+        background: url("../img/leftFloat.jpg") no-repeat #fff;
+        background-position: -90px -186px;
+        display: block;
+    }
+    .floatBox .floatBoxContent .floatDay a span {
+        width: 60px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .floatBox .floatBoxContent li a span {
+        width: 60px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        left: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    /********* 左侧固定盒子**********/

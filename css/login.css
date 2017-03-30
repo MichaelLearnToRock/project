@@ -1,0 +1,569 @@
+/******************************* CSS Reset **************************************/
+html,
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+input,
+img {
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 12px;
+}
+img {
+  border: none;
+  /*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em {
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #B0B0B0;
+}
+/******************************* CSS Reset **************************************/
+/******************************* Common *****************************************/
+.spaceX {
+  width: 100%;
+  height: 15px;
+  line-height: 15px;
+  clear: both;
+}
+.spaceY {
+  width: 15px;
+  height: 100%;
+  line-height: 100%;
+  clear: both;
+}
+.activeLi {
+  background: #666666;
+  border: solid 1px #BBB;
+  border-bottom: none;
+  font-weight: 900;
+}
+/******************************* Common *****************************************/
+#headerContainer {
+  min-width: 960px;
+  background: #fff;
+}
+#headerContainer .logo {
+  height: 85px;
+  width: 960px;
+  margin: 0 auto;
+}
+#headerContainer .logo > a {
+  background: url("../img/login/logo.jpg") no-repeat;
+  width: 360px;
+  height: 85px;
+  overflow: hidden;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+}
+#headerContainer .headerRight {
+  display: inline-block;
+  padding-top: 35px;
+  float: right;
+}
+#headerContainer .headerRight a:nth-child(1) {
+  width: 110px;
+  height: 31px;
+  overflow: hidden;
+  margin-right: 24px;
+  float: right;
+  background: url("../img/login/header_corn_new_v2.png") no-repeat;
+  background-position: 0 -64px;
+}
+#headerContainer .headerRight a:nth-child(2) {
+  width: 170px;
+  height: 31px;
+  overflow: hidden;
+  margin-right: 24px;
+  float: right;
+  background: url("../img/login/gild.png") no-repeat;
+}
+#headerContainer .headerRight a:nth-child(3) {
+  width: 110px;
+  height: 31px;
+  overflow: hidden;
+  margin-right: 24px;
+  float: right;
+  background: url("../img/login/header_corn_new_v2.png") no-repeat;
+  background-position: 0 0;
+}
+#sign {
+  line-height: 1.5;
+}
+#sign .loginWrap {
+  height: 418px;
+  margin: 50px auto;
+  line-height: 1.5;
+  width: 965px;
+}
+#sign .loginWrap .loginBoardMap {
+  width: 960px;
+  position: relative;
+}
+#sign .loginWrap .loginBoardMap .loginImage {
+  width: 960px;
+  height: 360px;
+  position: absolute;
+  background: url("../img/login/loginPic.jpg") no-repeat;
+}
+#sign .loginWrap .loginBoardMap .loginDetail {
+  width: 346px;
+  height: auto;
+  top: -10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.075);
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  min-height: 400px;
+  padding: 0 23px;
+  color: #333;
+  right: 0;
+  line-height: 1.5;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginTit {
+  width: 300px;
+  height: 60px;
+  margin-bottom: 15px;
+  line-height: 60px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginTit .tosignup {
+  color: #969696;
+  float: right;
+  line-height: 60px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginTit .tosignup a {
+  color: #ed145b;
+  text-decoration: none;
+  cursor: auto;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginTit h1 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #e31256;
+  float: left;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginTit h1 strong {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e31256;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .radio_wrapper {
+  width: 300px;
+  height: 30px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .radio_wrapper span {
+  padding-right: 30px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .radio_wrapper span input {
+  vertical-align: middle;
+  margin: 0;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .radio_wrapper span label {
+  line-height: 1.5;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form {
+  display: block;
+  width: 300px;
+  height: 232px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .textbox_ui {
+  margin-bottom: 26px;
+  position: relative;
+  height: 44px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .textbox_ui input {
+  box-shadow: none;
+  border: 1px solid #CFCFCF;
+  background-color: #fff;
+  vertical-align: middle;
+  padding: 10px 8px;
+  line-height: 1.5;
+  font-size: 14px;
+  outline: 0;
+  height: auto;
+  background: url("../img/login/sign.png") no-repeat;
+  background-position: 5px 0;
+  width: 300px;
+  padding-left: 38px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .textbox_ui .focus_text {
+  word-break: keep-all;
+  white-space: nowrap;
+  margin-top: 4px;
+  color: #999;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 1.5;
+  display: none;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .dynamic_pass_wrap {
+  width: 300px;
+  height: 44px;
+  font-size: 12px;
+  margin: 30px 0;
+  clear: both;
+  color: #333;
+  position: relative;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .dynamic_pass_wrap .dynamic_pass {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  position: relative;
+  width: 136px;
+  height: 44px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .dynamic_pass_wrap .dynamic_pass input{
+  width: 100px;
+  display: inline-block;
+  background: url("../img/login/sign.png") no-repeat;
+  background-position: 5px -50px;
+  box-shadow: none;
+  border: 1px solid #CFCFCF;
+  background-color: #fff;
+  vertical-align: middle;
+  padding: 10px 8px 10px 38px;
+  line-height: 1.5;
+  font-size: 14px;
+  outline: 0;
+  height: auto;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .dynamic_pass_wrap .dynamic_pass .focus_text {
+  word-break: keep-all;
+  white-space: nowrap;
+  margin-top: 4px;
+  color: #999;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 1.5;
+  display: none;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form .dynamic_pass_wrap .phonecode {
+  width: 148px;
+  height: 43px;
+  padding: 0 8px;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail #login-dynamic-form > p {
+  margin: 10px 0;
+  padding: 0;
+  color: #333;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .loginbtn {
+  display: block;
+  width: 100%;
+  background: #F8296D;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 30px;
+  height: 40px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 10px;
+  outline: 0;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .focus_text {
+  word-break: keep-all;
+  white-space: nowrap;
+  margin-top: 4px;
+  color: #999;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 1.5;
+  display: none;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form {
+  display: none;
+  box-sizing: border-box;
+  width: 300px;
+  height: 288px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui {
+  width: 300px;
+  height: 44px;
+  margin-bottom: 26px;
+  position: relative;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui #username {
+  width: 300px;
+  background: url("../img/login/sign.png") no-repeat;
+  background-position: 5px 0;
+  box-shadow: none;
+  border: 1px solid #CFCFCF;
+  vertical-align: middle;
+  padding: 10px 8px;
+  padding-left: 38px;
+  line-height: 1.5;
+  font-size: 14px;
+  outline: 0;
+  height: auto;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui .focus_text {
+  word-break: keep-all;
+  white-space: nowrap;
+  margin-top: 4px;
+  color: #999;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 1.5;
+  display: none;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui_pass {
+  width: 300px;
+  height: 44px;
+  margin-bottom: 26px;
+  position: relative;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui_pass #login_password {
+  width: 300px;
+  background: url("../img/login/sign.png") no-repeat;
+  background-position: 5px -50px;
+  box-shadow: none;
+  border: 1px solid #CFCFCF;
+  vertical-align: middle;
+  padding: 10px 8px;
+  padding-left: 38px;
+  line-height: 1.5;
+  font-size: 14px;
+  outline: 0;
+  height: auto;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .textbox_ui_pass .focus_text {
+  word-break: keep-all;
+  white-space: nowrap;
+  margin-top: 4px;
+  color: #999;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  line-height: 1.5;
+  display: none;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .complete_pass {
+  width: 300px;
+  height: 46px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .complete_pass a {
+  border: 1px solid #d7d7d7;
+  width: 246px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 100px;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  text-decoration: none;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form .complete_pass a:hover {
+  color: #ed145b;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form > P {
+  margin: 10px 0;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form > P a {
+  float: right;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form > P label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .login-user-form > P label input {
+  margin: 4px 0 0;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod {
+  width: 300px;
+  height: 86px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod > div {
+  width: 300px;
+  height: 33px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p {
+  width: 300px;
+  height: 43px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(1) {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  background: url(../img/login/icon.jpg) no-repeat;
+  float: left;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(1):hover {
+  opacity: 1;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(2) {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 15px;
+  background: url(../img/login/icon.jpg) no-repeat;
+  background-position: -57px 0;
+  float: left;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(2):hover {
+  opacity: 1;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(3) {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 15px;
+  background: url(../img/login/icon.jpg) no-repeat;
+  background-position: -114px 0;
+  float: left;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(3):hover {
+  opacity: 1;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(4) {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 15px;
+  background: url(../img/login/icon.jpg) no-repeat;
+  background-position: -169px 0;
+  float: left;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(4):hover {
+  opacity: 1;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(5) {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 15px;
+  background: url(../img/login/icon.jpg) no-repeat;
+  background-position: -228px 0;
+  float: left;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .otherMethod p a:nth-child(5):hover {
+  opacity: 1;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .shadowLeft {
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  top: 0;
+  left: -9px;
+  background: url(../img/login/shadow.png) no-repeat center;
+}
+#sign .loginWrap .loginBoardMap .loginDetail .shadowRight {
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  top: 0;
+  right: -3px;
+  background: url(../img/login/shadow.png) no-repeat center;
+}
+#footer {
+  width: 100%;
+  height: 220px;
+  padding-top: 5px;
+  background: none;
+  border-top: none;
+  position: relative;
+  bottom: -1px;
+  font-size: 12px;
+}
+#footer .footer_con {
+  width: 1090px;
+  height: 214px;
+  background: #fff;
+  line-height: 20px;
+  padding-bottom: 80px;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#footer .footer_con .footer_conDetail {
+  width: 1090px;
+  height: 78px;
+  padding: 14px 0 18px;
+  line-height: 23px;
+  text-align: center;
+}
+#footer .footer_con .footer_conDetail a {
+  color: #333;
+}
+#footer .footer_con > p:nth-child(2) {
+  width: 1090px;
+  height: 56px;
+}
+#footer .footer_con > p:nth-child(2) a {
+  width: 126px;
+  height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  background: url(../img/login/footer_btm_icon.png) no-repeat;
+  margin: 0 4px;
+  border-bottom: 1px solid #d7d7d7;
+}
+#footer .footer_con > p:nth-child(2) a:nth-child(2) {
+  background-position: -126px 0;
+}
+#footer .footer_con > p:nth-child(2) a:nth-child(3) {
+  background-position: -252px 0;
+}
+#footer .footer_con > p:nth-child(2) a:nth-child(4) {
+  background-position: -378px 0;
+}
+#footer .footer_con > p:nth-child(2) a:nth-child(5) {
+  background-position: -504px 0;
+}

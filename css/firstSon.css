@@ -1,0 +1,2269 @@
+/******************************* CSS Reset **************************************/
+html,
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+input,
+img {
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "微软雅黑";
+}
+img {
+  border: none;
+  /*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+
+}
+em {
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #B0B0B0;
+}
+/******************************* CSS Reset **************************************/
+/******************************* Common *****************************************/
+.spaceX {
+  width: 100%;
+  height: 15px;
+  line-height: 15px;
+  clear: both;
+}
+.spaceY {
+  width: 15px;
+  height: 100%;
+  line-height: 100%;
+  clear: both;
+}
+.activeLi {
+  background: #666666;
+  border: solid 1px #BBB;
+  border-bottom: none;
+  font-weight: 900;
+}
+/******************************* Common *****************************************/
+#contain {
+  width: 100%;
+}
+/********* 左侧固定盒子**********/
+.floatBox {
+  width: 145px;
+  height: 290px;
+  position: fixed;
+  top: 100px;
+  right: 80%;
+  z-index: 1000;
+  display: none;
+}
+.floatBox .floatBoxContent {
+  width: 145px;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.floatBox .floatBoxContent .home {
+  width: 145px;
+  height: 90px;
+  font-size: 14px;
+}
+.floatBox .floatBoxContent ul {
+  width: 145px;
+}
+.floatBox .floatBoxContent ul li {
+  width: 145px;
+  height: 40px;
+  cursor: pointer;
+}
+/********* 右侧固定盒子**********/
+.fixedBox {
+  width: 40px;
+  height: 100%;
+  line-height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #444851;
+  z-index: 1400;
+}
+.fixedBox .rightTop {
+  width: 40px;
+  line-height: 54%;
+  height: 54%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  /********* 右侧固定盒子登录**********/
+
+  /********* 右侧固定盒子登录**********/
+
+  /********* 右侧固定盒子购物车**********/
+
+  /********* 右侧固定盒子购物车**********/
+
+}
+.fixedBox .rightTop .rightLogin {
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+}
+.fixedBox .rightTop .rightLogin a {
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #444851;
+  overflow: hidden;
+}
+.fixedBox .rightTop .rightLogin a div {
+  width: 18px;
+  height: 19px;
+  line-height: 19px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.fixedBox .rightTop .rightLogin a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightTop .rightLogin a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px 0;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightTop .rightCart {
+  width: 40px;
+  height: 140px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.fixedBox .rightTop .rightCart a {
+  width: 40px;
+  height: 133px;
+  z-index: 1499;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail {
+  width: 26px;
+  height: 133px;
+  border-top: solid 1px #575b64;
+  border-bottom: solid 1px #575b64;
+  margin: 0 auto;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .cartImg {
+  width: 23px;
+  height: 18px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  background-position: 0 -29px;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .text {
+  display: block;
+  width: 16px;
+  height: 48px;
+  line-height: 16px;
+  margin: 40px 0 0 5px;
+  cursor: pointer;
+  position: relative;
+}
+.fixedBox .rightTop .rightCart a .rightShoppingDetail .cart_num {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: #ed145b;
+  text-align: center;
+  line-height: 21px;
+  margin: 13px 0 0 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.fixedBox .rightTop .rightCart a:hover {
+  background-color: #ED145B;
+}
+.fixedBox .rightTop .rightCart a:hover .cartImg {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 9px;
+  background-position: -33px -29px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightWallet {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  color: #d8d8d8;
+  margin-bottom: 4px;
+}
+.fixedBox .xuanFuWallet,
+.fixedBox .xuanFuHeart,
+.fixedBox .xuanFuFoot,
+.fixedBox .xuanFuRequire,
+.fixedBox .xuanFuBack {
+  width: 92px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0px;
+  left: -122px;
+  background: #444851;
+  opacity: 0;
+  z-index: 1600;
+  transition: all 0.2s ease 0s;
+  color: #d8d8d8;
+  text-align: center;
+  font-size: 12px;
+  visibility: hidden;
+}
+.fixedBox .rightWallet:hover .xuanFuWallet,
+.fixedBox .rightHeart:hover .xuanFuHeart,
+.fixedBox .rightFoot:hover .xuanFuFoot,
+.fixedBox .rightRequire:hover .xuanFuRequire,
+.fixedBox .rightBack:hover .xuanFuBack {
+  visibility: visible;
+  opacity: 1;
+  left: -92px;
+}
+.fixedBox .xuanFuTwoCode {
+  width: 148px;
+  height: 175px;
+  line-height: 175px;
+  position: absolute;
+  top: -152px;
+  left: 80px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  z-index: 1600;
+  transition: all 0.2s ease 0s;
+  text-align: center;
+  font-size: 12px;
+  visibility: hidden;
+  padding: 10px;
+  z-index: 10;
+}
+.fixedBox .xuanFuTwoCode img {
+  width: 148px;
+  height: 175px;
+  line-height: 175px;
+}
+.fixedBox .rightTwoCode:hover .xuanFuTwoCode {
+  visibility: visible;
+  opacity: 1;
+  left: -169px;
+  top: -155px;
+}
+.fixedBox .fixedBoxSanjiao {
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  position: absolute;
+  top: 17px;
+  left: 92px;
+  border-style: solid;
+  border-color: transparent transparent transparent #444851;
+  border-width: 5px 0 5px 5px;
+  z-index: 1600;
+}
+.fixedBox .twoCodeSanjiao {
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  position: absolute;
+  top: 172px;
+  right: -5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 5px 0 5px 5px;
+  z-index: 1600;
+}
+.fixedBox .rightWallet a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightWallet a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightWallet a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px -57px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightWallet a div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -57px;
+}
+.fixedBox .rightHeart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+}
+.fixedBox .rightHeart a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightHeart a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightHeart a:hover div {
+  width: 18px;
+  height: 15px;
+  line-height: 15px;
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -33px -85px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightHeart a div {
+  width: 18px;
+  height: 15px;
+  line-height: 15px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -85px;
+}
+.fixedBox .rightFoot {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.fixedBox .rightFoot a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.fixedBox .rightFoot a:hover {
+  background: #ED145B;
+}
+.fixedBox .rightFoot a:hover div {
+  width: 15px;
+  height: 24px;
+  line-height: 24px;
+  background: url("../img/rightFixed.png");
+  top: 10px;
+  left: 11px;
+  background-position: -32px -110px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedBox .rightFoot a div {
+  width: 15px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -110px;
+}
+.rightBottom {
+  width: 40px;
+  height: 19%;
+  line-height: 19%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.rightBottom .rightTwoCode {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.rightBottom .rightTwoCode a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.rightBottom .rightTwoCode a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightTwoCode a:hover div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 11px;
+  background-position: 0 -302px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightTwoCode a div {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  background-position: 0 -302px;
+}
+.rightBottom .rightRequire {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.rightBottom .rightRequire a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background-color: #444851;
+  position: relative;
+  overflow: hidden;
+}
+.rightBottom .rightRequire a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightRequire a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 12px;
+  background-position: -33px -175px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightRequire a div {
+  width: 15px;
+  height: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -175px;
+}
+.rightBottom .rightBack {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+.rightBottom .rightBack a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+}
+.rightBottom .rightBack a:hover {
+  background: #ED145B;
+}
+.rightBottom .rightBack a:hover div {
+  background: url("../img/rightFixed.png");
+  top: 11px;
+  left: 12px;
+  background-position: -33px -201px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.rightBottom .rightBack a div {
+  width: 17px;
+  height: 14px;
+  line-height: 14px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -201px;
+}
+.fixedShopping {
+  width: 40px;
+  height: 133px;
+  position: fixed;
+  top: 170px;
+  right: 0;
+  z-index: 1499;
+  cursor: pointer;
+  display: none;
+  background: #444851;
+}
+.fixedShopping > a {
+  width: 40px;
+  height: 133px;
+  line-height: 133px;
+  display: inline-block;
+}
+.fixedShopping > a:hover {
+  background: #ED145B;
+}
+.fixedShopping > a:hover .fixedShoppingDetail .cartImg {
+  background: url("../img/rightFixed.png");
+  background-position: -33px -29px;
+  background-repeat: no-repeat;
+  background-color: #ED145B;
+}
+.fixedShopping > a .fixedShoppingDetail {
+  width: 26px;
+  height: 133px;
+  margin: 0 auto;
+}
+.fixedShopping > a .fixedShoppingDetail .cartImg {
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  background: url("../img/rightFixed.png");
+  overflow: hidden;
+  background-position: 0 -29px;
+}
+.fixedShopping > a .fixedShoppingDetail .text1 {
+  display: block;
+  width: 16px;
+  line-height: 16px;
+  margin: 38px 0 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.fixedShopping > a .fixedShoppingDetail .cart_num {
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: #ed145b;
+  text-align: center;
+  margin: 13px 0 0 3px;
+  cursor: pointer;
+  color: #fff;
+}
+/********* 右侧固定盒子购物车**********/
+/******************************* Head 导航nav*******************************************/
+/********* 1. 头部Head设置 **********/
+#head {
+  width: 100%;
+  background: #ffffff;
+  /********* 2. 头部Head中导航Nav设置 **********/
+
+  /*************logo***********************/
+
+}
+#head #nav {
+  background: #eeeeee;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  top: 0;
+  left: 0;
+  /********* 3. 头部Head中导航Nav  NavCenter 设置 **********/
+
+}
+#head #nav .navCenter {
+  width: 1100px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #eeeeee;
+  /********* 4. 头部Head中导航Nav  NavCenter ul 设置 **********/
+
+  /*************右侧超链接***********************/
+
+  /*************右侧超链接***********************/
+
+}
+#head #nav .navCenter .navDetail1 {
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  background: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#head #nav .navCenter .navDetail1 ul {
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  /********* 头部Head中导航Nav  送至北京内容 设置 **********/
+
+  /********* 头部Head中导航Nav  送至北京内容 设置 **********/
+
+}
+#head #nav .navCenter .navDetail1 ul li {
+  font-size: 12px;
+  color: #000000;
+  height: 28px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  border: 0px 1px 0px 0px;
+}
+#head #nav .navCenter .navDetail1 ul li a {
+  margin: 0px 10px;
+  padding: 0px;
+  border: 0px;
+  font-size: 12px;
+  color: #6c6c6c;
+}
+#head #nav .navCenter .navDetail1 ul li a:hover {
+  font-size: 12px;
+  color: #ea175c;
+}
+#head #nav .navCenter .navDetail1 ul li a span {
+  display: inline-block;
+  font-size: 12px;
+  color: #000000;
+  width: 306px;
+  height: 28px;
+  line-height: 28px;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi {
+  font-size: 12px;
+  color: #000000;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px 1px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 228px;
+  z-index: 5;
+  /********* table外的div **********/
+
+  /********* table外的div **********/
+
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child {
+  display: block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  background: #eeeeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  color: #6c6c6c;
+  z-index: 5;
+  cursor: text;
+  overflow: hidden;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span {
+  display: inline-block;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  background: #eeeeee;
+  font-size: 12px;
+  color: #6c6c6c;
+  cursor: text;
+  overflow: hidden;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span #sanjiao {
+  display: inline-block;
+  width: 0px;
+  height: 0;
+  line-height: 0;
+  margin: 12px 0px 0px 60px;
+  padding: 0px;
+  border: 4px 4px 0 4px;
+  border-style: solid;
+  border-color: #666 transparent transparent transparent;
+  transform: rotate(0deg);
+  transition: all 0.5s ease 0s;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span span {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 5px;
+  display: inline-block;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span:hover {
+  background: #ffffff;
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px gainsboro;
+  background: #fff;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span:hover #sanjiao {
+  background: #ffffff;
+  transform: rotate(180deg);
+}
+#head #nav .navCenter .navDetail1 ul .lastLi div:last-child > span span {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+  border: 0px;
+  display: inline-block;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send {
+  width: 470px;
+  height: 26px;
+  position: absolute;
+  top: -244px;
+  left: 0px;
+  cursor: text;
+  border: none;
+  z-index: 4;
+  /********* table**********/
+
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send:hover + div > span {
+  background: #ffffff;
+  border-left: solid 1px gainsboro;
+  border-right: solid 1px gainsboro;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send:hover + div > span #sanjiao {
+  transform: rotate(180deg);
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent {
+  width: 490px;
+  height: 248px;
+  background: #ffffff;
+  cursor: text;
+  border: solid 1px #ededed;
+  border-top: none;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent th {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent td {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: solid 1px #ededed;
+}
+#head #nav .navCenter .navDetail1 ul .lastLi .send .sendContent td a {
+  cursor: pointer;
+}
+#head #nav .navCenter .navDetail2 {
+  width: 794px;
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  top: 0px;
+  left: 306px;
+  background: #eeeeee;
+  z-index: 10;
+}
+#head #nav .navCenter .navDetail2 ul {
+  float: right;
+}
+#head #nav .navCenter .navDetail2 ul li {
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  margin: 7px 0px;
+  padding: 0px;
+  border: 0px;
+  float: right;
+}
+#head #nav .navCenter .navDetail2 ul li a {
+  font-size: 12px;
+  color: #a1a1a1;
+  margin: 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
+#head #nav .navCenter .navDetail2 ul li a:hover {
+  font-size: 12px;
+  color: #ea175c;
+}
+#head #nav .navCenter .navDetail2 ul li:first-child a:hover {
+  font-size: 12px;
+  color: #1d50d7;
+  font-weight: 900;
+}
+#head #nav .navCenter .navDetail2 ul .phone {
+  width: 84px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #ea175c;
+  border-left: solid 1px #A1A1A1;
+}
+#head #nav .navCenter .navDetail2 ul .phone a {
+  width: 64px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #ea175c;
+}
+#head #nav .navCenter .navDetail2 ul .phone a img {
+  vertical-align: middle;
+  padding-right: 2px;
+}
+#head #nav .navCenter .navDetail2 ul .koubei {
+  width: 84px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #000000;
+  border-right: solid 1px #A1A1A1;
+}
+#head #nav .navCenter .navDetail2 ul .koubei a {
+  width: 73px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  margin-right: 0;
+}
+#head #nav .navCenter .navDetail2 ul .koubei a img {
+  vertical-align: middle;
+  padding-right: 2px;
+}
+#head #title {
+  line-height: 110px;
+  width: 100%;
+  height: 110px;
+  /*******************购物车*****************/
+
+}
+#head #title #titleCenter {
+  width: 1100px;
+  height: 110px;
+  line-height: 110px;
+  margin: 0 auto;
+}
+#head #title #titleCenter .titleLogo {
+  width: 285px;
+  height: 100px;
+  line-height: 100px;
+  background: url(../img/logo.png) no-repeat;
+  background-position: 0 0;
+  float: left;
+}
+#head #title #titleCenter .titleLogo a {
+  display: block;
+  width: 285px;
+  height: 100px;
+  line-height: 100px;
+}
+#head #title #titleCenter .titleSearch {
+  width: 600px;
+  height: 110px;
+  line-height: 110px;
+  float: left;
+}
+#head #title #titleCenter .titleSearch #searchBtnBox {
+  float: left;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 26px;
+  border: solid 3px #EA175C;
+  border-left: none;
+  cursor: pointer;
+  background-color: #EA175C;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+}
+#head #title #titleCenter .titleSearch #searchBtnBox span {
+  font-size: 15px;
+}
+#head #title #titleCenter .titleSearch #searchTextBox {
+  float: left;
+  width: 434px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 26px;
+  border: solid 3px #EA175C;
+}
+#head #title #titleCenter .titleSearch #searchTextBox #searchText {
+  width: 400px;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 11px;
+  font-size: 13px;
+  margin-left: 6px;
+  border: none;
+  outline: none;
+  border: 0;
+  /*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+
+  outline: 0;
+  float: left;
+  /*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+
+}
+#head #title #titleCenter .titleSearch ul {
+  margin-top: 16px;
+  height: 12px;
+  float: left;
+}
+#head #title #titleCenter .titleSearch ul li {
+  font-size: 12px;
+  line-height: 12px;
+  border-right: solid 1px #b0b0b0;
+  float: left;
+}
+#head #title #titleCenter .titleSearch ul li a {
+  color: #b0b0b0;
+  margin: 0px 10px;
+  padding: 0px;
+  border: 0px;
+}
+#head #title #titleCenter .titleSearch ul li a:hover {
+  color: deeppink;
+}
+#head #title #titleCenter .titleSearch ul .lastLi {
+  border-right: none;
+}
+#head #title #shopping {
+  width: 140px;
+  height: 110px;
+  line-height: 110px;
+  float: right;
+  margin: 0 auto;
+  line-height: 140px;
+}
+#head #title #shopping .shoppingCenter {
+  width: 140px;
+  height: 34px;
+  line-height: 34px;
+  border: solid 1px #E5E5E5;
+  margin-top: 26px;
+  cursor: pointer;
+  text-align: center;
+}
+#head #title #shopping .shoppingCenter a {
+  color: #666;
+  height: 28px;
+  font-size: 12px;
+}
+#head #title #shopping .shoppingCenter a img {
+  vertical-align: middle;
+  height: 28px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  float: left;
+}
+/*******************主菜单*****************/
+#menu {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  z-index: 5;
+  /*********IE8-的浏览器中，相对定位和绝对定位中的z-index属性必须设置在父容器上才有效。*********/
+
+  background-color: #171717;
+}
+#menu .menuCenter {
+  width: 1226px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+#menu .menuCenter ul {
+  height: 40px;
+  margin-left: 5%;
+}
+#menu .menuCenter ul li {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  cursor: pointer;
+}
+#menu .menuCenter ul li a {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+}
+#menu .menuCenter ul li a:hover {
+  color: #ababab;
+}
+#menu .menuCenter ul .firstLi {
+  background-color: #EA175C;
+}
+#menu .menuCenter ul .firstLi a:hover {
+  color: #FFFFFF;
+}
+#menu .menuCenter ul .baby a {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-right: 0;
+  padding: 0;
+}
+#menu .menuCenter ul .baby a:hover img {
+  opacity: 0.7;
+}
+#menu .menuCenter ul .baby a img {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+}
+/*******************轮播图片*****************/
+#bannerImg {
+  width: 100%;
+  height: 725px;
+  line-height: 725px;
+  position: relative;
+  overflow: hidden;
+}
+#bannerImg .firstImg {
+  width: 100%;
+  height: 725px;
+  line-height: 725px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/school/lunbo.jpg") 50% 0 no-repeat;
+  display: block;
+}
+#bannerImg a {
+  width: 1090px;
+  height: 725px;
+  line-height: 725px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+/*******************导航*****************/
+#firstNav {
+  width: 100%;
+  height: 500px;
+  line-height: 500px;
+  position: relative;
+  background: url("../img/firstSon/nav1920_500.jpg") no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+#firstNav .navContent {
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+}
+#firstNav .navContent a {
+  width: 470px;
+  height: 245px;
+  float: left;
+  margin-right: 10px;
+}
+/*******************开学美妆*****************/
+#step1 {
+  width: 100%;
+  height: 816px;
+  line-height: 816px;
+  position: relative;
+  background: url("../img/firstSon/clean1920_816.jpg") no-repeat;
+  background-position: center;
+}
+#step1 .cleanContent {
+  width: 960px;
+  height: 816px;
+  margin: 0 auto;
+  position: relative;
+}
+#step1 .cleanContent a {
+  margin-right: 10px;
+}
+#step1 .cleanContent a:nth-child(1) {
+  position: absolute;
+  top: 202px;
+  left: 2px;
+  width: 395px;
+  height: 367px;
+}
+#step1 .cleanContent a:nth-child(2) {
+  position: absolute;
+  top: 202px;
+  left: 581px;
+  width: 375px;
+  height: 317px;
+}
+#step1 .cleanContent a:nth-child(3) {
+  position: absolute;
+  top: 577px;
+  left: 2px;
+  width: 395px;
+  height: 231px;
+}
+#step1 .cleanContent a:nth-child(4) {
+  position: absolute;
+  top: 541px;
+  left: 583px;
+  width: 375px;
+  height: 267px;
+}
+#step1 .cleanContent .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 359px;
+  left: 725px;
+  position: absolute;
+}
+/*******************护肤*****************/
+#step2 {
+  width: 100%;
+  height: 594px;
+  line-height: 594px;
+  position: relative;
+  background: url("../img/firstSon/protectSkin1920_594.jpg") no-repeat;
+  background-position: center;
+}
+#step2 .protectSkinContent {
+  width: 960px;
+  height: 594px;
+  margin: 0 auto;
+  position: relative;
+}
+#step2 .protectSkinContent a {
+  margin-right: 10px;
+}
+#step2 .protectSkinContent a:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 299px;
+  height: 350px;
+}
+#step2 .protectSkinContent a:nth-child(2) {
+  position: absolute;
+  top: 7px;
+  left: 600px;
+  width: 360px;
+  height: 306px;
+}
+#step2 .protectSkinContent a:nth-child(3) {
+  position: absolute;
+  top: 366px;
+  left: 7px;
+  width: 322px;
+  height: 210px;
+}
+#step2 .protectSkinContent a:nth-child(4) {
+  position: absolute;
+  top: 323px;
+  left: 598px;
+  width: 365px;
+  height: 265px;
+}
+#step2 .protectSkinContent .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 359px;
+  left: 725px;
+  position: absolute;
+}
+/*******************面膜*****************/
+#step3 {
+  width: 100%;
+  height: 615px;
+  line-height: 615px;
+  position: relative;
+  background: url("../img/firstSon/mianMo1920_615.jpg") no-repeat;
+  background-position: center;
+}
+#step3 .mianMoContent {
+  width: 960px;
+  height: 615px;
+  margin: 0 auto;
+  position: relative;
+}
+#step3 .mianMoContent a {
+  margin-right: 10px;
+}
+#step3 .mianMoContent a:nth-child(1) {
+  position: absolute;
+  top: 22px;
+  left: 6px;
+  width: 335px;
+  height: 347px;
+}
+#step3 .mianMoContent a:nth-child(2) {
+  position: absolute;
+  top: 2px;
+  left: 567px;
+  width: 387px;
+  height: 327px;
+}
+#step3 .mianMoContent a:nth-child(3) {
+  position: absolute;
+  top: 361px;
+  left: 9px;
+  width: 345px;
+  height: 251px;
+}
+#step3 .mianMoContent a:nth-child(4) {
+  position: absolute;
+  top: 341px;
+  left: 569px;
+  width: 384px;
+  height: 261px;
+}
+#step3 .mianMoContent .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 470px;
+  left: 139px;
+  position: absolute;
+}
+/*******************化妆*****************/
+#step4 {
+  width: 100%;
+  height: 741px;
+  line-height: 741px;
+  position: relative;
+  background: url("../img/firstSon/makeup1920_741.jpg") no-repeat;
+  background-position: center;
+}
+#step4 .makeupContent {
+  width: 960px;
+  height: 741px;
+  margin: 0 auto;
+  position: relative;
+}
+#step4 .makeupContent a {
+  margin-right: 10px;
+}
+#step4 .makeupContent a:nth-child(1) {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 481px;
+  height: 251px;
+}
+#step4 .makeupContent a:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 682px;
+  width: 270px;
+  height: 309px;
+}
+#step4 .makeupContent a:nth-child(3) {
+  position: absolute;
+  top: 268px;
+  left: 5px;
+  width: 495px;
+  height: 348px;
+}
+#step4 .makeupContent a:nth-child(4) {
+  position: absolute;
+  top: 319px;
+  left: 682px;
+  width: 271px;
+  height: 319px;
+}
+#step4 .makeupContent a:nth-child(5) {
+  position: absolute;
+  top: 645px;
+  left: 39px;
+  width: 824px;
+  height: 89px;
+}
+#step4 .makeupContent .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 120px;
+  left: 100px;
+  position: absolute;
+}
+/*******************coat1*****************/
+#coat1 {
+  width: 100%;
+  height: 1644px;
+  line-height: 1644px;
+  position: relative;
+  background: url("../img/firstSon/coat1.jpg") no-repeat;
+  background-position: center;
+}
+#coat1 .coat1Content {
+  width: 960px;
+  height: 1644px;
+  margin: 0 auto;
+  position: relative;
+}
+#coat1 .coat1Content > a {
+  margin-right: 10px;
+}
+#coat1 .coat1Content > a:nth-child(1) {
+  position: absolute;
+  top: 82px;
+  left: 255px;
+  width: 461px;
+  height: 351px;
+}
+#coat1 .coat1Content > a:nth-child(2) {
+  position: absolute;
+  top: 444px;
+  left: 6px;
+  width: 517px;
+  height: 283px;
+}
+#coat1 .coat1Content > a:nth-child(3) {
+  position: absolute;
+  top: 447px;
+  left: 538px;
+  width: 405px;
+  height: 414px;
+}
+#coat1 .coat1Content > a:nth-child(4) {
+  position: absolute;
+  top: 737px;
+  left: 5px;
+  width: 482px;
+  height: 336px;
+}
+#coat1 .coat1Content > a:nth-child(5) {
+  position: absolute;
+  top: 874px;
+  left: 497px;
+  width: 450px;
+  height: 240px;
+}
+#coat1 .coat1Content > a:nth-child(6) {
+  position: absolute;
+  top: 1085px;
+  left: 5px;
+  width: 486px;
+  height: 256px;
+}
+#coat1 .coat1Content > a:nth-child(7) {
+  position: absolute;
+  top: 1124px;
+  left: 501px;
+  width: 451px;
+  height: 333px;
+}
+#coat1 .coat1Content > a:nth-child(8) {
+  position: absolute;
+  top: 1350px;
+  left: 5px;
+  width: 303px;
+  height: 386px;
+}
+#coat1 .coat1Content > a:nth-child(9) {
+  position: absolute;
+  top: 1463px;
+  left: 316px;
+  width: 399px;
+  height: 175px;
+}
+#coat1 .coat1Content > a:nth-child(10) {
+  position: absolute;
+  top: 1464px;
+  left: 723px;
+  width: 230px;
+  height: 171px;
+}
+#coat1 .coat1Content .soldOut1 {
+  background: url(../img/firstSon/soldoutStar/icon_buy.png) center no-repeat;
+  width: 85px;
+  height: 105px;
+  position: absolute;
+  top: 1300px;
+  left: 600px;
+}
+#coat1 .coat1Content .soldOut1 span {
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+  width: 85px;
+  height: 50px;
+  line-height: 16px;
+  position: relative;
+  top: 30px;
+}
+#coat1 .coat1Content .soldOut1 a {
+  float: left;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin: 11px 0 0 33px;
+  background: url(../img/firstSon/soldoutStar/star.png);
+}
+#coat1 .coat1Content .soldOut2 {
+  background: url(../img/firstSon/soldoutStar/icon_buy.png) center no-repeat;
+  width: 85px;
+  height: 105px;
+  position: absolute;
+  top: 1500px;
+  left: 800px;
+}
+#coat1 .coat1Content .soldOut2 span {
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+  width: 85px;
+  height: 50px;
+  line-height: 16px;
+  position: relative;
+  top: 30px;
+}
+#coat1 .coat1Content .soldOut2 a {
+  float: left;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin: 11px 0 0 33px;
+  background: url(../img/firstSon/soldoutStar/star.png);
+}
+/*******************coat2*****************/
+#coat2 {
+  width: 100%;
+  height: 1351px;
+  line-height: 1351px;
+  position: relative;
+  background: url("../img/firstSon/coat2.jpg") no-repeat;
+  background-position: center;
+}
+#coat2 .coat2Content {
+  width: 960px;
+  height: 1351px;
+  margin: 0 auto;
+  position: relative;
+}
+#coat2 .coat2Content a:nth-child(1) {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 461px;
+  height: 670px;
+}
+#coat2 .coat2Content a:nth-child(2) {
+  position: absolute;
+  top: 9px;
+  left: 471px;
+  width: 273px;
+  height: 667px;
+}
+#coat2 .coat2Content a:nth-child(3) {
+  position: absolute;
+  top: 9px;
+  left: 753px;
+  width: 201px;
+  height: 670px;
+}
+#coat2 .coat2Content a:nth-child(4) {
+  position: absolute;
+  top: 692px;
+  left: 5px;
+  width: 386px;
+  height: 649px;
+}
+#coat2 .coat2Content a:nth-child(5) {
+  position: absolute;
+  top: 688px;
+  left: 407px;
+  width: 348px;
+  height: 443px;
+}
+#coat2 .coat2Content a:nth-child(6) {
+  position: absolute;
+  top: 689px;
+  left: 705px;
+  width: 189px;
+  height: 649px;
+}
+/*******************coat3*****************/
+#coat3 {
+  width: 100%;
+  height: 1208px;
+  line-height: 1208px;
+  position: relative;
+  background: url("../img/firstSon/coat3.jpg") no-repeat;
+  background-position: center;
+}
+#coat3 .coat3Content {
+  width: 960px;
+  height: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#coat3 .coat3Content a:nth-child(1) {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 387px;
+  height: 285px;
+}
+#coat3 .coat3Content a:nth-child(2) {
+  position: absolute;
+  top: 8px;
+  left: 410px;
+  width: 538px;
+  height: 283px;
+}
+#coat3 .coat3Content a:nth-child(3) {
+  position: absolute;
+  top: 295px;
+  left: 6px;
+  width: 636px;
+  height: 280px;
+}
+#coat3 .coat3Content a:nth-child(4) {
+  position: absolute;
+  top: 334px;
+  left: 654px;
+  width: 342px;
+  height: 300px;
+}
+#coat3 .coat3Content a:nth-child(5) {
+  position: absolute;
+  top: 592px;
+  left: 3px;
+  width: 270px;
+  height: 383px;
+}
+#coat3 .coat3Content a:nth-child(6) {
+  position: absolute;
+  top: 588px;
+  left: 285px;
+  width: 188px;
+  height: 386px;
+}
+#coat3 .coat3Content a:nth-child(7) {
+  position: absolute;
+  top: 684px;
+  left: 486px;
+  width: 466px;
+  height: 290px;
+}
+#coat3 .coat3Content a:nth-child(8) {
+  position: absolute;
+  top: 995px;
+  left: 161px;
+  width: 661px;
+  height: 136px;
+}
+/*******************room1*****************/
+#room1 {
+  width: 100%;
+  height: 960px;
+  line-height: 960px;
+  position: relative;
+  background: url(../img/firstSon/room1.jpg) no-repeat;
+  background-position: center;
+}
+#room1 .room1Content {
+  width: 960px;
+  height: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+#room1 .room1Content a {
+  margin-right: 10px;
+}
+#room1 .room1Content a:nth-child(1) {
+  position: absolute;
+  top: 157px;
+  left: 5px;
+  width: 948px;
+  height: 413px;
+}
+#room1 .room1Content a:nth-child(2) {
+  position: absolute;
+  top: 587px;
+  left: 6px;
+  width: 930px;
+  height: 364px;
+}
+#room1 .room1Content .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 359px;
+  left: 725px;
+  position: absolute;
+}
+/*******************room2*****************/
+#room2 {
+  width: 100%;
+  height: 772px;
+  line-height: 772px;
+  top: 1px;
+  position: relative;
+  background: url(../img/firstSon/room2.jpg) no-repeat;
+  background-position: center;
+}
+#room2 .room2Content {
+  width: 960px;
+  height: 770px;
+  margin: 0 auto;
+  position: relative;
+}
+#room2 .room2Content a {
+  margin-right: 10px;
+}
+#room2 .room2Content a:nth-child(1) {
+  position: absolute;
+  top: 157px;
+  left: 5px;
+  width: 948px;
+  height: 413px;
+}
+#room2 .room2Content a:nth-child(2) {
+  position: absolute;
+  top: 587px;
+  left: 6px;
+  width: 930px;
+  height: 364px;
+}
+#room2 .room2Content .soldOut {
+  background: url("../img/firstSon/soldOut.png") center no-repeat;
+  width: 110px;
+  height: 110px;
+  top: 559px;
+  left: 725px;
+  position: absolute;
+}
+/*******************room3*****************/
+#room3 {
+  width: 100%;
+  height: 764px;
+  line-height: 764px;
+  position: relative;
+  background: url(../img/firstSon/room3.jpg) no-repeat;
+  background-position: center;
+}
+#room3 .room3Content {
+  width: 960px;
+  height: 764px;
+  margin: 0 auto;
+  position: relative;
+}
+#room3 .room3Content a {
+  margin-right: 10px;
+}
+#room3 .room3Content a:nth-child(1) {
+  position: absolute;
+  top: 157px;
+  left: 5px;
+  width: 948px;
+  height: 413px;
+}
+#room3 .room3Content a:nth-child(2) {
+  position: absolute;
+  top: 587px;
+  left: 6px;
+  width: 930px;
+  height: 364px;
+}
+/*******************room4*****************/
+#room4 {
+  width: 100%;
+  height: 1316px;
+  line-height: 1316px;
+  position: relative;
+  background: url(../img/firstSon/room4.jpg) no-repeat;
+  background-position: center;
+}
+#room4 .room4Content {
+  width: 960px;
+  height: 1316px;
+  margin: 0 auto;
+  position: relative;
+}
+#room4 .room4Content a {
+  margin-right: 10px;
+}
+#room4 .room4Content a:nth-child(1) {
+  position: absolute;
+  top: 157px;
+  left: 5px;
+  width: 948px;
+  height: 413px;
+}
+#room4 .room4Content a:nth-child(2) {
+  position: absolute;
+  top: 587px;
+  left: 6px;
+  width: 930px;
+  height: 364px;
+}
+#room4 .room4Content a:nth-child(3) {
+  position: absolute;
+  top: 782px;
+  left: 10px;
+  width: 930px;
+  height: 364px;
+}
+#room4 .room4Content a:nth-child(4) {
+  position: absolute;
+  top: 1162px;
+  left: 11px;
+  width: 933px;
+  height: 147px;
+}
+/*******************************************footer*****************************************/
+#footer {
+  width: 100%;
+  height: 738px;
+  line-height: 738px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  /*******************footerTop*****************/
+
+  /*******************footerTop*****************/
+
+  /*******************footer细节*****************/
+
+  /*******************footer图片****************/
+
+  /*******************footer图片****************/
+
+  /*******************footer关于聚美*****************/
+
+  /*******************footer关于聚美*****************/
+
+  /*******************footerButtom*****************/
+
+}
+#footer .footTop {
+  width: 100%;
+  height: 186px;
+  line-height: 186px;
+}
+#footer .footTop .footTopCenter {
+  width: 1090px;
+  height: 186px;
+  line-height: 186px;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 30px 0 15px;
+}
+#footer .footTop .footTopCenter a {
+  width: 170px;
+  height: 140px;
+  line-height: 140px;
+  color: #999;
+  font-size: 14px;
+  display: block;
+  float: left;
+  line-height: 18px;
+  overflow: hidden;
+  text-align: center;
+}
+#footer .footTop .footTopCenter a:nth-child(1) {
+  width: 130px;
+}
+#footer .footTop .footTopCenter a:nth-child(3) {
+  width: 160px;
+}
+#footer .footTop .footTopCenter a:nth-child(4) {
+  width: 168px;
+}
+#footer .footTop .footTopCenter a:nth-child(6) {
+  width: 158px;
+}
+#footer .footTop .footTopCenter a:nth-child(7) {
+  width: 134px;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg1 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  background: url("../img/bottom/footerTop.png");
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg2 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -64px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg3 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -128px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg4 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -190px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg5 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -253px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg6 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -316px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg7 {
+  width: 63px;
+  height: 63px;
+  line-height: 63px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  background: url("../img/bottom/footerTop.png");
+  background-repeat: no-repeat;
+  background-position: -379px 0;
+}
+#footer .footTop .footTopCenter a span {
+  color: #333;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail {
+  width: 100%;
+  height: 195px;
+  line-height: 195px;
+}
+#footer .footDetail .footDetailContent {
+  width: 1090px;
+  height: 165px;
+  line-height: 165px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: solid 1px #ccc;
+  overflow: hidden;
+  /*******************footer服务保障*****************/
+
+  /*******************footer服务保障*****************/
+
+  /*******************footer使用帮助 支付方式 配送方式*****************/
+
+  /*******************footer使用帮助 支付方式 配送方式*****************/
+
+  /*******************footer售后服务*****************/
+
+  /*******************footer售后服务*****************/
+
+  /*******************footer二维码*****************/
+
+  /*******************footer二维码*****************/
+
+}
+#footer .footDetail .footDetailContent ul {
+  width: 156px;
+  height: 143px;
+  line-height: 143px;
+  padding-left: 20px;
+  float: left;
+  overflow: hidden;
+  font-size: 12px;
+}
+#footer .footDetail .footDetailContent ul li a {
+  width: 160px;
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  transform: translate(0);
+  transition: all 0.4s linear;
+}
+#footer .footDetail .footDetailContent ul li a:hover {
+  transform: translate(10px, 0);
+  color: #f16c96;
+  font-weight: lighter;
+}
+#footer .footDetail .footDetailContent .footService {
+  width: 160px;
+  overflow: hidden;
+  color: #666;
+}
+#footer .footDetail .footDetailContent .footService li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+}
+#footer .footDetail .footDetailContent .footService a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footHelp li:nth-child(1),
+#footer .footDetail .footDetailContent .footPay li:nth-child(1),
+#footer .footDetail .footDetailContent .footSend li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+}
+#footer .footDetail .footDetailContent .footHelp a,
+#footer .footDetail .footDetailContent .footPay a,
+#footer .footDetail .footDetailContent .footSend a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footDetailContent .footHelp li:nth-child(1),
+#footer .footDetail .footDetailContent .footDetailContent .footPay li:nth-child(1),
+#footer .footDetail .footDetailContent .footDetailContent .footSend li:nth-child(1) {
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#footer .footDetail .footDetailContent .footDetailContent .footHelp a,
+#footer .footDetail .footDetailContent .footDetailContent .footPay a,
+#footer .footDetail .footDetailContent .footDetailContent .footSend a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footAfterSale {
+  width: 118px;
+  height: 143px;
+  line-height: 143px;
+  padding-left: 16px;
+  float: left;
+  zoom: 1;
+  overflow: hidden;
+}
+#footer .footDetail .footDetailContent .footAfterSale li:nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+}
+#footer .footDetail .footDetailContent .footAfterSale a {
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  display: block;
+  cursor: pointer;
+}
+#footer .footDetail .footDetailContent .footTwoCode {
+  width: 239px;
+  height: 146px;
+  line-height: 146px;
+  float: left;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul {
+  width: 93px;
+  height: 146px;
+  line-height: 146px;
+  text-align: center;
+  padding-left: 10px;
+  margin-top: 0;
+  color: #666;
+  float: left;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .phoneJumei,
+#footer .footDetail .footDetailContent .footTwoCode ul .jumeiWechat {
+  width: 83px;
+  height: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .firstTWoCode,
+#footer .footDetail .footDetailContent .footTwoCode ul .secondTWoCode {
+  width: 83px;
+  height: 18px;
+  line-height: 18px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .firstTWoCode span {
+  background: url("../img/bottom/firstCode.png") 0 -423px no-repeat;
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 3px;
+}
+#footer .footDetail .footDetailContent .footTwoCode ul .secondTWoCode span {
+  width: 78px;
+  height: 78px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 3px;
+  background: url("../img/bottom/secondCode.png");
+}
+#footer .footImg {
+  width: 100%;
+  height: 95px;
+  line-height: 95px;
+  background: url("../img/bottom/footerImg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#footer .footAbout {
+  width: 100%;
+  line-height: 48px;
+  height: 48px;
+  background: #333;
+}
+#footer .footAbout .footAboutCenter {
+  width: 1090px;
+  height: 48px;
+  line-height: 48px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#footer .footAbout .footAboutCenter a {
+  display: inline-block;
+  padding-right: 12px;
+  color: #FFFFFF;
+  line-height: 48px;
+  font-family: "arial narrow";
+  font-size: 12px;
+  cursor: pointer;
+}
+#footer .footBottom {
+  width: 100%;
+  line-height: 214px;
+  height: 214px;
+  background: #424242;
+}
+#footer .footBottom .footBottomCenter {
+  width: 1090px;
+  line-height: 214px;
+  height: 214px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#footer .footBottom .footBottomCenter p a {
+  cursor: pointer;
+}
+#footer .footBottom .footBottomCenter p:nth-child(1) {
+  width: 1090px;
+  height: 46px;
+  line-height: 46px;
+  padding: 14px 0 18px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #ccc;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) {
+  width: 1090px;
+  height: 56px;
+  line-height: 56px;
+  /*******************footerButtom*****************/
+
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a1 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a2 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -126px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a3 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -252px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a4 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -378px 0;
+}
+#footer .footBottom .footBottomCenter p:nth-last-child(1) .a5 {
+  width: 126px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../img/bottom/footerButtom.png") no-repeat;
+  background-position: -504px 0;
+}
+/*******************footer*****************/

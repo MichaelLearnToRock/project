@@ -1,0 +1,340 @@
+picture/******************************* CSS Reset **************************************/
+
+html,body,div,ul,li,p,h1,h2,h3,h4,h5,h6,span,a,input,img {
+	margin: 0;
+	padding: 0;
+	/*height: 100%;*/
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font-family: "微软雅黑";
+	background: #f7f7f7;
+}
+
+img {
+	border: none;
+	/*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em{
+	font-style: normal;
+	font-weight: 400;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/******************************* CSS Reset **************************************/
+#container{
+	width:100%;
+	height: 1000px;
+	background: url(../img/weather.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+/*******************************head导航**************************************/
+#container .headBox{
+	width: 100%;
+	height: 66px;
+	display: block;
+	background: #000;
+}
+.headBox .headDetail{
+	width: 1090px;
+	height: 66px;
+	margin: 0 auto;
+	color: #fff;
+}
+.headBox .headDetail .logo{
+	width: 200px;
+	height: 66px;
+	float: left;
+    margin: 16px 0 0;
+}
+.headBox .headDetail .headDetailRight{
+	width: 560px;
+	height: 66px;
+	float: right;
+    margin: 20px 0 0;
+}
+.headBox .headDetail .headDetailRight a{
+	float: left;
+    margin: 0 0 0 48px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 27px;
+}
+.headBox .headDetail .headDetailRight a:last-child:hover{
+	color: #EA175C;
+}
+/*******************************head导航**************************************/
+#container .nav{
+	width:1090px;
+	height: 200px;
+	/*background: #555;*/
+	font-size: 14px;
+	text-align: left;
+	margin: 0 auto;
+}
+/********* 4. 头部Head中导航 title .titleSearch ul 设置 **********/
+.nav .titleSearch {
+	width: 600px;
+	height: 110px;
+	margin: 0 auto;
+}
+.nav .titleSearch #searchBtnBox {
+	float: left;
+	width: 100px;
+	height: 34px;
+	margin-top: 26px;
+	border: solid 3px #555;
+	border-left: none;
+	cursor: pointer;
+	background-color: #555;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+}
+.nav span {
+	font-size: 15px;
+}
+.nav .titleSearch #searchTextBox {
+	float: left;
+	width: 434px;
+	height: 34px;
+	margin-top: 26px;
+	border: solid 3px #555;
+	background-color: #fff;
+
+}
+.nav .titleSearch #searchTextBox #searchText {
+	width: 400px;
+	height: 15px;
+	margin-top: 11px;
+	font-size: 13px;
+	
+	margin-left: 6px;
+	border: none;
+	outline: none;
+	border: 0;
+	
+	/*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+	
+	outline: 0;
+	float: left;
+	
+	/*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+}
+/********* 4. 头部Head中导航 title .titleSearch ul 设置 **********/
+/*********  content设置 **********/
+.nav .content{
+	width:1090px;
+	height: 650px;
+	font-size: 14px;
+	text-align: left;
+	margin: 0 auto;
+	/*background: rgba(0,0,0,.3);*/
+	border-radius: 10px;
+}
+ .content .today{
+ 	width: 1090px;
+ 	height: 800px;
+ 	display: block;
+ 	color: #fff;
+ 	font-size: 14px;
+ 	margin: 0 auto;
+ }
+ .content .today .coat{
+ 	float: right;
+ 	margin-right: 80px;
+ }
+ .content .today .detail1{
+ 	width: 1090px;
+ 	height: 335px;
+ 	float: left;
+ 	background: rgba(0,0,0,.3);
+ 	border-radius: 10px;
+ 	margin-bottom: 50px;
+ 	display: block;
+ }
+ .content .today .detail1>span{
+ 	display: block;
+ 	margin-top: 30px;
+ 	width: 100px;
+ 	height: 30px;
+ 	float: left;
+ 	font-size: 250px;
+ }
+ .content .today .detail1 .picture{
+ 	width: 120px;
+ 	height: 120px;
+ 	float: left;
+ 	margin:100px 30px 0 30px;
+ }
+ .content .today .detail1 .picture img{
+ 	width: 120px;
+ 	height: 120px;
+ 	line-height: 120px;
+ 	margin: 0 auto;
+ 	
+ }
+.content .today .detail1 ul{
+ 	width: 200px;
+ 	height: 300px;
+ 	line-height: 200px;
+ 	float: left;
+ 	margin-right: 80px;	
+ }
+
+.content .today .detail1 ul li{
+	width: 300px;
+	height:30px;
+	margin-top:20px;
+}
+
+ .content .today .detail1 #nowcity{
+ 	width: 80px;
+ 	height: 30px;
+ 	margin-top: 10px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    
+    color: rgba(255,255,255,.6);
+
+ }
+ .content .today .detail1 #nowcityContent{
+ 	width: 80px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+   
+    font-size: 20px;
+
+ 
+ }
+ .content .today .detail1 #date{
+ 	width: 80px;
+ 	height: 30px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    
+     font-size: 20px;
+    color: rgba(255,255,255,.6);
+    margin-right: 10px;
+
+ }
+ .content .today .detail1 #dateContent{
+ 	
+ 	width: 150px;
+   line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+   
+     font-size: 20px;
+
+   
+ }
+ .content .today .detail1 #week{
+ 	width: 80px;
+ 	height: 30px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+   
+     font-size: 20px;
+    color: rgba(255,255,255,.6);
+    margin-right: 10px;
+     }
+ .content .today .detail1 #weekContent{
+ 	width: 80px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+  
+     font-size: 20px;
+ 
+ }
+ .content .today .detail1 #wind,.content .today .detail1 #temperature,.content .today .detail1 #weather{
+ 	width: 80px;
+ 	height: 30px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+     font-size: 20px;
+    color: rgba(255,255,255,.6);
+    margin-right: 10px;
+ }
+ .content .today .detail1 #windContent,.content .today .detail1 #temperatureContent,.content .today .detail1 #weatherContent{
+ 	width: 80px;
+    line-height: 30px;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+     font-size: 20px;
+ }
+ 
+/********* content 当日天气设置 **********/ 
+/********* content 五天天气设置 **********/
+ .content .today h2{
+ 	text-align: center;
+ 	font-family: "arial narrow";
+ 	font-style: italic;
+ }
+ .content .today .detail2{
+ 	width: 1090px;
+ 	height:200px;
+ 	margin-bottom: 50px;
+ 	display: block;
+ 	clear: both;
+ }
+ .content .today .detail2 ul{
+ 	width: 1090px;
+ 	height: 200px;
+ 	margin: 0 auto;
+ 	position: relative;
+ 	top:20px;
+ 	/*left:2%;*/
+ 	
+ }
+ .content .today .detail2 ul li{
+ 	width: 200px;
+ 	height: 200px;
+ 	text-align: center;
+ 	padding: 10px 0 0;
+ 	border: solid 2px #555;
+ 	margin-right: 10px;
+ 	float: left;
+ 	background: rgba(0,0,0,.3);
+ 	border-radius: 15px;
+ }
+ .content .today .detail2 ul li:first-child{
+ 	margin-left: 15px;
+ }
+ /********* content 五天天气设置 **********/
+/********* content设置 **********/

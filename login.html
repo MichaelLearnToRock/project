@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/mei.ico" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/jqLogin.js"></script>
+	</head>
+	<body>
+		<div id="headerContainer">
+			<div class="logo">
+				<a href="index.html"></a>
+				<div class="headerRight">
+					<a></a>
+					<a></a>
+					<a></a>
+				</div>
+			</div>
+		</div>
+		<div id="sign">
+			<div class="loginWrap">
+				<div class="loginBoardMap">
+					<div class="loginImage"></div>
+					<div class="loginDetail">
+						<div class="loginTit">
+							<div class="tosignup">
+								还没有账号？
+								<a>30秒注册</a>
+							</div>
+							<h1>
+								<strong>登录账号</strong>
+							</h1>
+						</div>
+						<div class="radio_wrapper">
+							<span>
+								<input name="method" type="radio" value="0" id="radio_dynamic" checked/>
+								<label for="radio_dynamic">手机动态密码登录</label>
+							</span>
+							<span>
+								<input name="method" type="radio" value="1" id="radio_normal" />
+								<label for="radio_normal">普通登录</label>
+							</span>
+						</div>
+						<!--手机动态密码登录表格-->
+						<form id="login-dynamic-form" action="#">
+							<div class="textbox_ui ">
+								<input type="text" placeholder="已注册的手机号码" id="dynamic_mobile" autofocus autocomplete="off" onkeyup='this.value=this.value.replace(/\D/gi,"")'/>
+								<div class="focus_text">请输入11位手机号码</div>
+							</div>
+							<div class="dynamic_pass_wrap">
+								<div class="dynamic_pass">
+									<input type="text" placeholder="动态密码" autocomplete="off" />
+									<div class="focus_text">请点击获取手机动态密码</div>
+								</div>
+								<button class="phonecode">获取手机动态密码</button>
+							</div>
+							<p>
+								<label for="dynamic_auto_login">
+									<input type="checkbox" id="dynamic_auto_login" checked />&nbsp;自动登录
+								</label>
+							</p>
+							<input class="loginbtn" type="submit" value="登录" />
+						</form>
+						<!--普通登录表格-->
+						<form class="login-user-form" method="post" action="">
+							<div class="textbox_ui">
+								<input type="text" placeholder="已验证手机/邮箱/用户名" id="username" autofocus autocomplete="off" />
+								<div class="focus_text">请输入登录名，登录名可能是您的手机号、邮箱或用户名</div>
+							</div>
+							<div class="textbox_ui_pass">
+								<input type="password" placeholder="密码" id="login_password" autocomplete="off" />
+								<div class="focus_text">请输入您的密码，您的密码可能为字母、数字或符号的组合</div>
+							</div>
+							<div class="complete_pass">
+								<a>点击完成验证</a>
+							</div>
+							<p>
+								<a class="forget">忘记密码?</a>
+								<label for="auto_login">
+									<input type="checkbox"id="auto_login" checked />&nbsp;自动登录
+								</label>
+							</p>
+							<input class="loginbtn" type="submit" value="登录" />
+						</form>
+						<div class="otherMethod">
+							<div>你也可以使用以下账号登录</div>
+							<p>
+								<a class="method1" title="QQ"></a>
+								<a class="method1" title="支付宝"></a>
+								<a class="method1" title="新浪微博"></a>
+								<a class="method1" title="360"></a>
+								<a class="method1" title="百度"></a>
+							</p>
+						</div>
+						<div class="shadowLeft"></div>
+						<div class="shadowRight"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer_con">
+				<p class="footer_conDetail">
+					Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888<br /> 京公网安备 11010102001226 号 |
+					<a>京ICP证111033号</a>
+					| 食品流通许可证 SP1101051110165515（1-1）|
+					<a>营业执照</a>
+				</p>
+				<p class="">
+					<a></a>
+					<a></a>
+					<a></a>
+					<a></a>
+					<a></a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

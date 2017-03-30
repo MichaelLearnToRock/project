@@ -1,0 +1,1592 @@
+/******************************* CSS Reset **************************************/
+
+html,body,div,ul,li,p,h1,h2,h3,h4,h5,h6,span,a,input,img {
+	margin: 0;
+	padding: 0;
+	/*height: 100%;*/
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font-family: "微软雅黑";
+	background: #f7f7f7;
+}
+
+img {
+	border: none;
+	/*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em{
+	font-style: normal;
+	font-weight: 400;
+}
+a{
+	cursor: pointer;
+}
+/******************************* Common *****************************************/
+
+#contain {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+a {
+	text-decoration: none;
+	color: #B0B0B0;
+}
+
+.spaceX {
+	width: 100%;
+	height: 15px;
+	clear: both;
+}
+
+.spaceY {
+	width: 15px;
+	height: 100%;
+	clear: both;
+}
+
+.sanjiao {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #666 transparent transparent transparent;
+	left: 106px;
+	display: none;
+}
+
+.activeLi {
+	background: #666;
+	border: solid 1px #BBB;
+	border-bottom: none;
+	font-weight: 900;
+}
+
+
+/******************************* Common *****************************************/
+/********* 右侧固定盒子**********/
+
+#contain .fixedBox {
+	width: 40px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: #444851;
+	z-index: 1400;
+}
+#contain .fixedBox .rightTop{
+	width: 40px;
+	height: 54%;
+	position: absolute;
+	top:20%;
+	right:0;
+	/*background: red;*/
+}
+
+/********* 右侧固定盒子登录**********/
+#contain .fixedBox .rightTop .rightLogin{
+	width: 40px;
+	height: 38px;
+	position: relative;
+	top: 0;
+	left: 0;	
+}
+#contain .fixedBox .rightTop .rightLogin a{
+    display: block;
+    width: 40px;
+    height: 38px;
+    background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+#contain .fixedBox .rightTop .rightLogin a:hover{
+	background: #ED145B;
+}
+#contain .fixedBox .rightTop .rightLogin a:hover div{
+	background: url(../img/rightFixed.png);
+	top:10px;
+	left:11px;
+	background-position: -33px 0;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+#contain .fixedBox .rightTop .rightLogin a div{
+	width:18px;
+	height: 19px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:10px;
+	left:11px;
+}
+/********* 右侧固定盒子登录**********/
+/********* 右侧固定盒子购物车**********/
+#contain .fixedBox .rightTop .rightCart{
+	width: 40px;
+	height: 140px;
+	position: relative;
+	top: 0;
+	left: 0;	
+}
+.rightCart a{
+	width: 40px;
+	height: 133px;
+	z-index: 1499;
+	display: block;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.fixedShopping a{
+	width: 40px;
+	height: 133px;
+	z-index: 1499;
+	display: block;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+} 
+.rightCart a:hover{
+	background: #ED145B;
+}
+.fixedShopping a:hover{
+	background: #ED145B;
+}
+.rightCart a:hover .cartImg{
+	background: url(../img/rightFixed.png);
+	top:11px;
+	left:9px;
+	background-position: -33px -29px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+.fixedShopping a:hover .cartImg{
+	background: url(../img/rightFixed.png);
+	top:11px;
+	left:9px;
+	background-position: -33px -29px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+.rightCart a .rightShoppingDetail{
+	width:26px;
+	height: 133px;
+	border-top:solid 1px #575b64;
+	border-bottom:solid 1px #575b64;
+	margin:0 auto;
+}
+.rightCart a .cartImg{
+	width:23px;
+	height: 18px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:11px;
+	left:9px;
+	background-position: 0px -29px;
+}
+.rightCart a  .text{
+	display: block;
+	width:16px;
+	height: 48px;
+	margin: 38px 0 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.rightCart a  .cart_num{
+	width: 21px;
+    height: 21px;
+    display: block;
+    border-radius: 50%;
+    background: #ed145b;
+    text-align: center;
+    line-height: 21px;
+    margin: 13px 0 0 3px;
+    cursor: pointer;
+    color: #fff;
+}
+#contain .fixedShopping{
+	width: 40px;
+	height: 133px;
+	position: fixed;
+	top: 130px;
+	right: 0;
+	z-index: 1499;
+	cursor: pointer;
+	display: none;
+	background: #444851;
+}
+#contain .fixedShopping a{
+	display: inline-block;
+	width: 40px;
+	height: 133px;
+	
+}
+#contain .fixedShopping a .fixedShoppingDetail{
+	width:26px;
+	height: 133px;
+	/*border-top:solid 1px #575b64;
+	border-bottom:solid 1px #575b64;*/
+	margin:0 auto;
+}
+.fixedShoppingDetail .cartImg{
+	width:23px;
+	height: 18px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:11px;
+	left:9px;
+	background-position: 0px -29px;
+}
+.fixedShoppingDetail .text{
+	display: block;
+	width:16px;
+	height: 48px;
+	margin: 38px 0 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.fixedShoppingDetail .cart_num{
+	width: 21px;
+    height: 21px;
+    display: block;
+    border-radius: 50%;
+    background: #ed145b;
+    text-align: center;
+    line-height: 21px;
+    margin: 13px 0 0 3px;
+    cursor: pointer;
+    color: #fff;
+}
+/********* 右侧固定盒子购物车**********/
+/********* 右侧固定盒子钱包**********/
+#contain .fixedBox .rightTop .rightWallet{
+	width:40px;
+	height: 40px;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+	color: #d8d8d8;
+	margin-bottom: 4px;
+}
+.xuanFuWallet,.rightHeart .xuanFuHeart,.rightFoot .xuanFuFoot,.rightRequire .xuanFuRequire,.rightBack .xuanFuBack{
+	width: 92px;
+	height: 40px;
+	line-height: 40px;
+	background: #444851;
+	opacity: 0;
+	/*display: none;*/
+	position: absolute;
+	top: 0px;
+	left: -122px;
+	z-index: 1600;
+	transition: all .2s ease 0s;
+	color: #d8d8d8;
+	text-align: center;
+	font-size: 12px;	
+	visibility: hidden;
+}
+.xuanFuTwoCode{
+	width: 148px;
+	height: 175px;
+	line-height: 175px;
+	background:#fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	border-radius: 5px 0 0 5px;
+	opacity: 0;
+	position: absolute;
+	top: -152px;
+	right: 80px;
+	z-index: 1600;
+	transition: all .2s ease 0s;
+	/*color: #d8d8d8;*/
+	text-align: center;
+	font-size: 12px;	
+	visibility: hidden;
+	padding: 10px;
+	z-index: 10;
+}
+.xuanFuTwoCode img{
+	width: 148px;
+	height: 175px;
+}
+#contain .fixedBox .fixedBoxSanjiao{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color:transparent transparent transparent #444851;
+	border-width:5px 0px 5px 5px ;
+	position: absolute;
+	top: 17px;
+	left: 92px;
+	z-index: 1600;
+}
+#contain .fixedBox .twoCodeSanjiao{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color:transparent transparent transparent #fff;
+	border-width:5px 0px 5px 5px ;
+	position: absolute;
+	top: 172px;
+	/*left: 92px;*/
+	right:-5px;
+	z-index: 1600;
+	
+	
+}
+.rightWallet:hover .xuanFuWallet,.rightHeart:hover .xuanFuHeart,.rightFoot:hover .xuanFuFoot,.rightRequire:hover .xuanFuRequire,.rightBack:hover .xuanFuBack{
+	visibility: visible;
+	opacity: 1;
+	left: -92px;
+}
+.rightTwoCode:hover .xuanFuTwoCode{
+	visibility: visible;
+	opacity: 1;
+	left: -169px;
+	top:-155px;
+}
+.rightWallet a{
+	width:40px;
+	height: 40px;
+	display: block;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.rightWallet a div{
+	width:18px;
+	height: 18px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:10px;
+	left:11px;
+	background-position: 0 -57px;
+}
+.rightWallet a:hover{
+	background: #ED145B;
+}
+.rightWallet a:hover div{
+	background: url(../img/rightFixed.png);
+	top:10px;
+	left:11px;
+	background-position: -33px -57px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子钱包**********/
+/********* 右侧固定盒子爱心收藏**********/
+#contain .fixedBox .rightTop .rightHeart{
+	width:40px;
+	height: 40px;
+/*	margin-bottom: 4px;*/
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+
+}
+.rightHeart a{
+	width:40px;
+	height: 40px;
+	display: block;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.rightHeart a div{
+	width:18px;
+	height: 15px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:10px;
+	left:11px;
+	background-position: 0 -85px;
+}
+ .rightHeart a:hover{
+	background: #ED145B;
+}
+.rightHeart a:hover div{
+	width:18px;
+	height: 15px;
+	background: url(../img/rightFixed.png);
+	top:10px;
+	left:11px;
+	background-position: -33px -85px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子爱心收藏**********/
+/********* 右侧固定盒子足迹**********/
+#contain .fixedBox .rightTop .rightFoot{
+	width:40px;
+	height: 40px;
+	margin-bottom: 4px;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+.rightFoot a{
+	display: block;
+	width:40px;
+	height: 40px;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.rightFoot a div{
+	width:15px;
+	height: 24px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:10px;
+	left:11px;
+	background-position: 0px -110px;
+}
+.rightFoot a:hover{
+	background: #ED145B;
+}
+.rightFoot a:hover div{
+	width:15px;
+	height: 24px;
+	background: url(../img/rightFixed.png);
+	top:10px;
+	left:11px;
+	background-position: -32px -110px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子足迹*********/
+/********* 右侧固定盒子buttom*********/
+#contain .fixedBox .rightBottom{
+	width: 40px;
+	height:19%;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+/********* 右侧固定盒子buttom二维码*********/
+#contain .fixedBox .rightBottom .rightTwoCode{
+	width:40px;
+	height: 40px;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.rightTwoCode a{
+	display: block;
+	width:40px;
+	height: 40px;
+	background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.rightTwoCode a div{
+	width:18px;
+	height: 18px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:11px;
+	left:11px;
+	background-position: 0px -302px;
+}
+
+.rightTwoCode a:hover{
+	background: #ED145B;
+}
+.rightTwoCode a:hover div{
+	width:18px;
+	height: 18px;
+	background: url(../img/rightFixed.png);
+	top:11px;
+	left:11px;
+	background-position: 0px -302px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子buttom二维码*********/
+/********* 右侧固定盒子buttom客服*********/
+#contain .fixedBox .rightBottom .rightRequire{
+	width:40px;
+	height: 40px;
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.rightRequire a{
+	display: block;
+	width:40px;
+	height: 40px;
+    background-color: #444851;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.rightRequire a div{
+	width:15px;
+	height: 16px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:11px;
+	left:12px;
+	background-position: 0px -175px;
+}
+.rightRequire a:hover{
+	background: #ED145B;
+}
+.rightRequire a:hover div{
+	background: url(../img/rightFixed.png);
+	top:11px;
+	left:12px;
+	background-position: -33px -175px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子buttom客服*********/
+/********* 右侧固定盒子buttom回到顶部*********/
+#contain .fixedBox .rightBottom .rightBack{
+	width:40px;
+	height: 40px;
+	position: relative;
+	display: none;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.rightBack a{
+	width:40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.rightBack a div{
+	width:17px;
+	height: 14px;
+	background: url(../img/rightFixed.png);
+	overflow: hidden;
+	position: absolute;
+	top:12px;
+	left:12px;
+	background-position: 0px -201px;
+}
+.rightBack a:hover{
+	background: #ED145B;
+}
+.rightBack a:hover div{
+	background: url(../img/rightFixed.png);
+	top:11px;
+	left:12px;
+	background-position: -33px -201px;
+	background-repeat: no-repeat;
+	background-color: #ED145B;
+}
+/********* 右侧固定盒子buttom回到顶部*********/
+/********* 右侧固定盒子**********/
+/********* 左侧固定盒子**********/
+#contain .floatBox{
+	width:60px;
+	height: 250px;
+	position:fixed;
+    top: 100px;
+    right: 85%;
+    z-index: 1000;
+    display: none;
+}
+.floatBox .floatBoxContent{
+	width:60px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+    right: 0;
+}
+
+.floatBox .floatBoxContent .home{
+	width: 60px;
+    height: 45px;
+    font-size: 14px;
+    background: #fe6397;
+    color: #fff;
+    text-align: center;
+    padding-top: 14px;
+    border-bottom: 1px solid #fff;
+}
+.floatBox .floatBoxContent ul{
+	width: 60px;
+	height: 186px;
+	border-bottom: 2px solid #fe6397;
+}
+.floatBox .floatBoxContent li{
+	width: 60px;
+	height: 62px;
+
+}
+.floatBox .floatBoxContent li a{
+	width: 60px;
+	height: 62px;
+    display: block;
+    color: #8f8f8f;
+} 
+.floatBox .floatBoxContent .floatDay a{
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position:0 0; 
+} 
+.floatBox .floatBoxContent ul .floatDay:hover a{
+	width: 60px;
+	height: 62px;
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position: -90px 0;
+    display: block; 
+}
+.floatBox .floatBoxContent ul .floatNews a{
+	
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position: 0 -124px;
+    
+} 
+.floatBox .floatBoxContent ul .floatNews:hover a{
+	width: 60px;
+	height: 62px;
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position: -90px -124px;
+    display: block; 
+}
+.floatBox .floatBoxContent ul .floatBrand a{
+	
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position: 0 -186px;
+   
+}
+.floatBox .floatBoxContent ul .floatBrand:hover a{
+	width: 60px;
+	height: 62px;
+	background: url(../img/leftFloat.jpg) no-repeat #fff;
+	background-position: -90px -186px;
+    display: block; 
+}
+.floatBox .floatBoxContent .floatDay a span{
+	width: 60px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 40px;
+	left: 0;
+	font-size: 13px;
+	/*color: #fff;*/
+	text-align: center;
+}	
+.floatBox .floatBoxContent li a span{
+	width: 60px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 40px;
+	left: 0;
+	font-size: 13px;
+	
+	text-align: center;
+}	
+/********* 左侧固定盒子**********/
+/******************************* Head 导航nav*******************************************/
+
+/********* 1. 头部Head设置 **********/
+#head {
+	width: 100%;
+	background: #fff;
+
+}
+
+/********* 2. 头部Head中导航Nav设置 **********/
+#nav {
+	background-color: #eee;
+	width: 100%;
+	height: 28px;
+	position: relative;
+}
+
+/********* 3. 头部Head中导航Nav  NavCenter 设置 **********/
+.navCenter {
+	width: 1100px;
+	height: 28px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #eee;
+}
+/********* 4. 头部Head中导航Nav  NavCenter ul 设置 **********/
+#nav .navCenter .navDetail1 {
+	width: 306px;
+	height: 28px;
+	float: left;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+#nav .navCenter .navDetail1 ul {
+	width: 306px;
+	height: 28px;
+	float: left;
+}
+#nav .navCenter .navDetail1 ul li {
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	border-right: 1px;
+	float: left;
+}
+#nav .navCenter .navDetail1 ul li a {
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #6c6c6c;
+}
+.navDetail1 ul li a span {
+	display: inline-block;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+}
+
+/*超链接悬浮效果*/
+#nav .navCenter .navDetail1 ul li a:hover {
+	color: #EA175C;
+}
+
+/********* 头部Head中导航Nav  送至北京内容 设置 **********/
+#nav .navCenter .navDetail1 ul .lastLi {
+	font-size: 12px;
+	width: 78px;
+	height: 28px;
+	line-height: 28px;
+	border-right: 1px;
+	position: absolute;
+	top: 0px;
+	left: 228px;
+	z-index: 5;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child {
+	display: block;
+	width: 78px;
+	height: 28px;
+	background: #EEEEEE;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	cursor: text;
+	color: #6c6c6c;
+	overflow: hidden;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child >span {
+	cursor: text;
+	color: #6c6c6c;
+	display: inline-block;
+	overflow: hidden;
+	width: 78px;
+	height: 28px;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child >span span {
+	width: 60px;
+	height: 28px;
+	margin-left: 5px;
+	display: inline-block;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child >span #sanjiao {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	margin-top: 12px;
+	margin-left: 60px;
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: #666 transparent transparent transparent;
+	transform: rotate(0deg);
+	transition: all 0.5s ease 0s;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child >span:hover #sanjiao {
+	transform: rotate(180deg);
+	background: #fff;
+}
+#nav .navCenter .navDetail1 ul .lastLi div:last-child >span:hover {
+	border-left: solid 1px gainsboro;
+	border-right: solid 1px gainsboro;
+	background: #fff;
+}
+
+/********* table外的div **********/
+#nav .navCenter .navDetail1 ul .lastLi .send {
+	width: 470px;
+	height: 26px;
+	cursor: text;
+	border: none;
+	position: absolute;
+	top: -244px;
+	left: 0px;
+	z-index: 4;
+}
+#nav .navCenter .navDetail1 ul .lastLi .send:hover + div>span {
+	background: #fff;
+	border-left: solid 1px gainsboro;
+	border-right: solid 1px gainsboro;
+}
+#nav .navCenter .navDetail1 ul .lastLi .send:hover + div>span #sanjiao {
+	transform: rotate(180deg);
+}
+
+/********* table**********/
+#nav .navCenter .navDetail1 ul .lastLi .sendContent {
+	width: 490px;
+	height: 248px;
+	cursor: text;
+	border: none;
+	border: solid 1px #ededed;
+	border-top: none;
+	background: #fff;
+}
+#nav .navCenter .navDetail1 ul .lastLi th {
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	border-bottom: solid 1px #ededed;
+	border-right: solid 1px #ededed;
+}
+#nav .navCenter .navDetail1 ul .lastLi .sendContent td {
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	border-bottom: solid 1px #ededed;
+}
+#nav .navCenter .navDetail1 ul .lastLi .sendContent td a {
+	cursor: pointer;
+}
+
+/********* 头部Head中导航Nav  送至北京内容 设置 **********/
+
+/*************右侧超链接***********************/
+#nav .navCenter .navDetail2 {
+	width: 794px;
+	height: 28px;
+	position: absolute;
+	background-color: #eee;
+	top: 0px;
+	left: 306px;
+	z-index: 10;
+}
+#nav .navCenter .navDetail2 ul {
+	height: 28px;
+	float: right;
+}
+#nav .navCenter .navDetail2 ul li {
+	height: 14px;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	float: right;
+}
+#nav .navCenter .navDetail2 ul li:first-child a:hover{
+	color: #1d50d7;
+	font-weight: 900;
+}
+#nav .navCenter .navDetail2 ul li a {
+	height: 12px;
+	color: #b0b0b0;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #a1a1a1;
+}
+#nav .navCenter .navDetail2 ul .phone {
+	/*padding-left: 15px;*/
+	
+	width: 84px;
+	height: 14px;
+	font-size: 12px;
+	border-left: solid 1px #A1A1A1;
+}
+.navDetail2 ul .phone a {
+	width: 64px;
+	height: 14px;
+	color: #EA175C;
+}
+.navDetail2 ul .phone a img {
+	vertical-align: middle;
+	padding-right: 2px;
+}
+#nav .navCenter .navDetail2 ul .koubei {
+	/*padding-right: 15px;*/
+	
+	width: 84px;
+	height: 14px;
+	font-size: 12px;
+	border-right: solid 1px #A1A1A1;
+}
+.navDetail2 ul .koubei a {
+	display: inline-block;
+	width: 73px;
+	margin-right: 0;
+}
+.navDetail2 ul .koubei a img {
+	vertical-align: middle;
+	padding-right: 2px;
+}
+
+/*超链接悬浮效果*/
+#nav .navCenter .navDetail2 ul li a:hover {
+	color: #EA175C;
+}
+
+/*************logo***********************/
+#title {
+	width: 100%;
+	height: 110px;
+
+}
+#title #titleCenter {
+	width: 1100px;
+	margin-left: 124px;
+	height: 110px;
+	margin: 0 auto;
+	line-height: 110px;
+}
+#titleCenter .titleLogo {
+	width: 285px;
+	height: 100px;
+	background: url(../img/logo.png);
+	background-position: -124px 0;
+	float: left;
+}
+#titleCenter .titleLogo a {
+	display: block;
+	width: 285px;
+	height: 100px;
+}
+
+/********* 4. 头部Head中导航 title .titleSearch ul 设置 **********/
+#titleCenter .titleSearch {
+	width: 600px;
+	height: 110px;
+	float: left;
+}
+#titleCenter .titleSearch #searchBtnBox {
+	float: left;
+	width: 100px;
+	height: 34px;
+	margin-top: 26px;
+	border: solid 3px #EA175C;
+	border-left: none;
+	cursor: pointer;
+	background-color: #EA175C;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+}
+#searchBtnBox span {
+	font-size: 15px;
+}
+#titleCenter .titleSearch #searchTextBox {
+	float: left;
+	width: 434px;
+	height: 34px;
+	margin-top: 26px;
+	border: solid 3px #EA175C;
+}
+#titleCenter .titleSearch #searchTextBox #searchText {
+	width: 400px;
+	height: 15px;
+	margin-top: 11px;
+	font-size: 13px;
+	margin-left: 6px;
+	border: none;
+	outline: none;
+	border: 0;
+	/*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+	
+	outline: 0;
+	float: left;
+	
+	/*********IE8-的浏览器中，将文本框的边框设置成none无效，要设置成0*********/
+}
+
+/*******************搜索框下的li超链接************/
+#titleCenter .titleSearch ul {
+	margin-top: 16px;
+	height: 12px;
+	float: left;
+}
+#titleCenter .titleSearch ul li {
+	font-size: 12px;
+	line-height: 12px;
+	border-right: solid 1px #b0b0b0;
+	float: left;
+}
+#titleCenter .titleSearch ul li.lastLi {
+	border-right: none;
+}
+#titleCenter .titleSearch ul li a {
+	color: #b0b0b0;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*超链接悬浮效果*/
+#titleCenter .titleSearch ul li a:hover {
+	color: deeppink;
+}
+
+/*******************购物车*****************/
+#title #shopping {
+	width: 140px;
+	height: 110px;
+	float: right;
+	margin: 0 auto;
+	line-height: 140px;
+}
+#title #shopping .shoppingCenter {
+	width: 140px;
+	height: 34px;
+	line-height: 34px;
+	border: solid 1px #E5E5E5;
+	margin-top: 26px;
+	cursor: pointer;
+	text-align: center;
+}
+#title #shopping .shoppingCenter a {
+	color: #666;
+	height: 28px;
+	font-size: 12px;
+	/*height:40px;
+	line-height: 40px;*/
+}
+#title #shopping .shoppingCenter img {
+	vertical-align: middle;
+	height: 28px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+	float: left;
+
+}
+
+/*******************主菜单*****************/
+#menu {
+	width: 100%;
+	height: 40px;
+	position: relative;
+	z-index: 5;
+	/*********IE8-的浏览器中，相对定位和绝对定位中的z-index属性必须设置在父容器上才有效。*********/
+	background-color: #171717;
+}
+#menu .menuCenter {
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+	
+}
+#menu .menuCenter ul {
+	height: 40px;
+	margin-left: 5%;
+}
+#menu .menuCenter ul li {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	cursor: pointer;
+	
+}
+#menu .menuCenter ul .firstLi {
+	background-color: #EA175C;
+}
+#menu .menuCenter ul li a {
+	width: 100%;
+	height: 40px;
+	font-size: 15px;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+}
+#menu .menuCenter ul .baby a{
+	width: 110px;
+	height: 40px;
+	font-size: 14px;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin-right: 0;
+	padding: 0;
+}
+#menu .menuCenter ul .baby img{
+	position: absolute;
+	top:-12px;
+	left: 15px;
+}
+#menu .menuCenter ul .baby a:hover img{
+	opacity: 0.7;
+}
+#menu .menuCenter li a:hover {
+	color: #ababab;
+}
+#menu .menuCenter ul li.firstLi a:hover {
+	color: #FFFFFF;
+}
+
+/*******************轮播图片*****************/
+#bannerImg {
+	width: 100%;
+	height: 725px;
+	position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#bannerImg .firstImg{
+	display: block;
+	width: 100%;
+	height: 725px;
+	position: absolute;
+	top:0;
+	left:0;
+	background: url(../img/school/lunbo.jpg) 50% 0px no-repeat;
+}
+
+#bannerImg a{
+	width: 1090px;
+	height: 350px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+/*******************轮播图片*****************/
+
+/*******************footer*****************/
+#footer{
+	width:100%;
+	height:738px;
+	position: relative;
+	/*bottom: 0;
+	left:0;*/
+	overflow: hidden;
+	background: #FFFFFF;
+	 border-top: 1px solid #ccc;
+}
+/*******************footerTop*****************/
+#footer .footTop{
+	width: 100%;
+	height:186px;
+	
+}
+#footer .footTop .footTopCenter{
+	width:1090px;
+	height:186px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 30px 0 15px;
+   
+}
+#footer .footTop .footTopCenter a{
+	width: 170px;
+	height: 140px;
+    color: #999;
+    font-size: 14px;
+    display: block;
+    float: left;
+    line-height: 18px;
+    overflow: hidden;
+    text-align: center;
+}
+#footer .footTop .footTopCenter a:nth-child(1){
+	width: 130px;
+}
+#footer .footTop .footTopCenter a:nth-child(3){
+	width: 160px;
+}
+#footer .footTop .footTopCenter a:nth-child(4){
+	width: 168px;
+}
+#footer .footTop .footTopCenter a:nth-child(6){
+	width: 158px;
+}
+#footer .footTop .footTopCenter a:nth-child(7){
+	width: 134px;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg1{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg2{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+    background-position: -64px 0;
+}
+#footer .footTop .footTopCenter a .footTopCenterImg3{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+    background-position: -128px 0;
+}
+
+#footer .footTop .footTopCenter a .footTopCenterImg4{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+   background-position: -190px 0;
+}
+
+#footer .footTop .footTopCenter a .footTopCenterImg5{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+    background-position: -253px 0;
+}
+
+#footer .footTop .footTopCenter a .footTopCenterImg6{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+    background-position: -316px 0;
+}
+
+#footer .footTop .footTopCenter a .footTopCenterImg7{
+	width: 63px;
+    height: 63px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    background:url(../img/bottom/footerTop.png);
+    background-repeat: no-repeat;
+    background-position: -379px 0;
+}
+
+
+#footer .footTop .footTopCenter a span{
+	color: #333;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+/*******************footerTop*****************/
+/*******************footer服务保障*****************/
+#footer .footDetail{
+	width: 100%;
+	height:195px;
+}
+.footDetailContent ul li a{
+	width: 160px;
+	height: 22px;
+    line-height: 22px;
+    display: block;
+    position: relative;
+    transform: translate(0);
+    transition: all .4s linear;
+}
+
+.footDetailContent ul li a:hover{
+	 transform: translate(10px,0);
+	 color: #f16c96;
+	 font-weight: lighter;
+	 
+}
+.footDetail .footDetailContent{
+	width:1090px;
+	height:165px;
+	margin: 0 auto;
+	padding-top: 30px;
+	border-top: solid 1px #ccc;
+	overflow: hidden;
+}
+.footDetailContent ul{
+	width:156px;
+	height:143px;
+	padding-left: 20px;
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+}
+.footDetailContent .footService{
+	width:160px;
+	overflow: hidden;
+	color: #666;
+}
+.footDetailContent .footService li:nth-child(1){
+	color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.footDetailContent .footService a{
+	height: 22px;
+    line-height: 22px;
+    color: #666;
+    display: block;
+    cursor: pointer;
+}
+/*******************footer服务保障*****************/
+/*******************footer使用帮助 支付方式 配送方式*****************/
+.footDetailContent .footHelp li:nth-child(1),.footDetailContent .footPay li:nth-child(1),.footDetailContent .footSend li:nth-child(1){
+	color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.footDetailContent .footHelp a,.footDetailContent .footPay a,.footDetailContent .footSend a{
+	height: 22px;
+    line-height: 22px;
+    color: #666;
+    display: block;
+    cursor: pointer;
+}
+/*******************footer使用帮助 支付方式 配送方式*****************/
+/*******************footer售后服务*****************/
+.footDetailContent .footAfterSale{
+	width: 118px;
+	height: 143px;
+    padding-left: 16px;
+    float: left;
+    zoom: 1;
+    overflow: hidden;
+}
+.footDetailContent .footAfterSale li:nth-child(1){
+	color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.footDetailContent .footAfterSale a{
+	height: 22px;
+    line-height: 22px;
+    color: #666;
+    display: block;
+    cursor: pointer;
+}
+/*******************footer二维码*****************/
+.footDetailContent .footTwoCode{
+	width: 239px;
+	height: 146px;
+	/*margin-left: 4px;*/
+	float: left;
+}
+.footTwoCode ul{
+	width: 93px;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 0;
+    height: 146px;
+    color: #666;
+	float: left;
+}
+.footTwoCode ul .phoneJumei,.footTwoCode ul .jumeiWechat{
+	width:83px;
+	height: 18px;
+	font-weight: 700;
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+.footTwoCode ul .firstTWoCode,.footTwoCode ul .secondTWoCode{
+	width:83px;
+	height: 83px;
+}
+.footTwoCode ul .firstTWoCode span{
+	background: url(../img/bottom/firstCode.png) 0 -423px no-repeat;
+	width: 78px;
+    height: 78px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 3px;
+}
+.footTwoCode ul .secondTWoCode span{
+	width: 78px;
+    height: 78px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 3px;
+    background: url(../img/bottom/secondCode.png) ;
+    top:0;
+    left:0;
+}
+/*******************footer二维码*****************/
+
+/*******************footer售后服务*****************/
+/*******************footer图片****************/
+#footer .footImg{
+	width: 100%;
+	height:95px;
+	background: url(../img/bottom/footerImg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*******************footer关于聚美*****************/
+#footer .footAbout{
+	width: 100%;
+	height:48px;
+	background: #333;
+	
+}
+#footer .footAbout .footAboutCenter{
+	width:1090px;
+	height:48px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	
+}
+.footAboutCenter a{
+	height: 48px;
+	display: inline-block;
+	padding-right: 12px;
+	color: #FFFFFF;
+	line-height: 48px;
+	font-family: "arial narrow";
+	font-size: 12px;
+	cursor: pointer;
+}
+/*******************footer关于聚美*****************/
+/*******************footerButtom*****************/
+#footer .footBottom{
+	width: 100%;
+	height:214px;
+	background: #424242;
+}
+.footBottom .footBottomCenter{
+	width: 1090px;
+	height:214px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*padding-left: 150px;*/
+}
+.footBottomCenter p:nth-child(1){
+	width: 1090px;
+	height:46px;
+	padding: 14px 0 18px;
+    line-height: 23px;
+    font-size: 12px;
+    color: #ccc;
+}
+.footBottomCenter p a{
+	cursor: pointer;
+}
+.footBottomCenter p:nth-last-child(1){
+	width: 1090px;
+	height:56px;
+}
+.footBottomCenter p:nth-last-child(1) .a1{
+	width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/bottom/footerButtom.png) no-repeat;
+}
+.footBottomCenter p:nth-last-child(1) .a2{
+	width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/bottom/footerButtom.png) no-repeat;
+    background-position: -126px 0;
+}
+.footBottomCenter p:nth-last-child(1) .a3{
+	width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/bottom/footerButtom.png) no-repeat;
+    background-position: -252px 0;
+}
+.footBottomCenter p:nth-last-child(1) .a4{
+	width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/bottom/footerButtom.png) no-repeat;
+    background-position: -378px 0;
+}
+.footBottomCenter p:nth-last-child(1) .a5{
+	width: 126px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../img/bottom/footerButtom.png) no-repeat;
+    background-position: -504px 0;
+}
+/*******************footerButtom*****************/
+/*******************footer*****************/

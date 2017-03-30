@@ -1,0 +1,600 @@
+/******************************* CSS Reset **************************************/
+html,
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+input,
+img {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "微软雅黑"; //  background: #f7f7f7;
+    font-size: 12px;
+}
+img {
+    border: none;
+    /*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em {
+    font-style: normal;
+    font-weight: 400;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #B0B0B0;
+}
+/******************************* CSS Reset **************************************/
+/******************************* Common *****************************************/
+@totalWidth: 100%;
+.setSize(@setWidth:100%;@setHeight:0) {
+    width: @setWidth;
+    height: @setHeight;
+    line-height: @setHeight;
+}
+.setBackground(@setContent) {
+    background: @setContent;
+}
+.setPosition(@detailPosition:relative;@top:0;@left:0;) {
+    position: @detailPosition;
+    top: @top;
+    left: @left;
+}
+.setFloat(@float:left) {
+    float: @float;
+}
+.setMargin(@margin:0px;@padding:0px;@border:0px) {
+    margin: @margin;
+    padding: @padding;
+    border: @border;
+}
+.setFont(@fontSize:12px;@color:#000) {
+    font-size: @fontSize;
+    color: @color;
+}
+.setDisplay(@display:block) {
+    display: @display;
+}
+.spaceX {
+    .setSize(100%;15px);
+    clear: both;
+}
+.spaceY {
+    .setSize(15px;100%);
+    clear: both;
+}
+.activeLi {
+    .setBackground(#666);
+    border: solid 1px #BBB;
+    border-bottom: none;
+    font-weight: 900;
+}
+/******************************* Common *****************************************/
+#headerContainer {
+    min-width: 960px;
+    background: #fff;
+    .logo {
+        height: 85px;
+        width: 960px;
+        margin: 0 auto;
+        &>a {
+            background: url("../img/login/logo.jpg") no-repeat;
+            width: 360px;
+            height: 85px;
+            overflow: hidden;
+            float: left;
+            font-size: 0;
+            line-height: 0;
+        }
+    }
+    .headerRight {
+        display: inline-block;
+        padding-top: 35px;
+        float: right;
+        a:nth-child(1) {
+            width: 110px;
+            height: 31px;
+            overflow: hidden;
+            margin-right: 24px;
+            float: right;
+            background: url("../img/login/header_corn_new_v2.png") no-repeat;
+            background-position: 0 -64px;
+        }
+        a:nth-child(2) {
+            width: 170px;
+            height: 31px;
+            overflow: hidden;
+            margin-right: 24px;
+            float: right;
+            background: url("../img/login/gild.png") no-repeat;
+        }
+        a:nth-child(3) {
+            width: 110px;
+            height: 31px;
+            overflow: hidden;
+            margin-right: 24px;
+            float: right;
+            background: url("../img/login/header_corn_new_v2.png") no-repeat;
+            background-position: 0 0;
+        }
+    }
+}
+#sign {
+    line-height: 1.5;
+    .loginWrap {
+        height: 418px;
+        margin: 50px auto;
+        padding-bottom: ;
+        //margin: 100px auto;
+        line-height: 1.5;
+        width: 965px;
+        .loginBoardMap {
+            width: 960px;
+            position: relative;
+            .loginImage {
+                width: 960px;
+                height: 360px;
+                position: absolute;
+                background: url("../img/login/loginPic.jpg") no-repeat;
+            }
+            .loginDetail {
+                width: 346px;
+                height: auto;
+                padding-bottom: 10px;
+                top: -10px;
+                box-shadow: 0 0 4px rgba(0,0,0,.075);
+                background: rgba(255,255,255,.85);
+                position: absolute;
+                min-height: 400px;
+                padding: 0 23px;
+                color: #333;
+                right: 0;
+                line-height: 1.5;
+                .loginTit {
+                    width: 300px;
+                    height: 60px;
+                    margin-bottom: 15px;
+                    line-height: 60px;
+                    .tosignup {
+                        color: #969696;
+                        float: right;
+                        line-height: 60px;
+                        a {
+                            color: #ed145b;
+                            text-decoration: none;
+                            cursor: auto;
+                        }
+                    }
+                    h1 {
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #e31256;
+                        float: left;
+                        strong {
+                            font-weight: bold;
+                            font-size: 20px;
+                            color: #e31256;
+                        }
+                    }
+                }
+                .radio_wrapper {
+                    width: 300px;
+                    height: 30px;
+                    span {
+                        padding-right: 30px;
+                        input {
+                            vertical-align: middle;
+                            margin: 0;
+                        }
+                        label {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                //手机登录表格
+                #login-dynamic-form {
+                    display: block;
+                    width: 300px;
+                    height: 232px;
+                    .textbox_ui {
+                        margin-bottom: 26px;
+                        position: relative;
+                        height: 44px;
+                        input {
+                            box-shadow: none;
+                            border: 1px solid #CFCFCF;
+                            background-color: #fff;
+                            vertical-align: middle;
+                            padding: 10px 8px;
+                            line-height: 1.5;
+                            font-size: 14px;
+                            outline: 0;
+                            height: auto;
+                            background: url("../img/login/sign.png") no-repeat;
+                            background-position: 5px 0;
+                            width: 300px;
+                            padding-left: 38px;
+                        }
+                        .focus_text {
+                            word-break: keep-all;
+                            white-space: nowrap;
+                            margin-top: 4px;
+                            color: #999;
+                            top: 100%;
+                            left: 0;
+                            position: absolute;
+                            line-height: 1.5;
+                            display: none;
+                            font-size: 12px;
+                        }
+                    }
+                    .dynamic_pass_wrap {
+                        width: 300px;
+                        height: 44px;
+                        margin-top: 10px;
+                        font-size: 12px;
+                        margin: 30px 0;
+                        clear: both;
+                        color: #333;
+                        .dynamic_pass {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            vertical-align: middle;
+                            position: relative;
+                            width: 136px;
+                            height: 44px;
+                            input {
+                                width: 136px;
+                                display: inline-block;
+                                background: url("../img/login/sign.png") no-repeat;
+                                background-position: 5px -50px;
+                                box-shadow: none;
+                                border: 1px solid #CFCFCF;
+                                background-color: #fff;
+                                vertical-align: middle;
+                                padding: 10px 8px 10px 38px;
+                                line-height: 1.5;
+                                font-size: 14px;
+                                outline: 0;
+                                height: auto;
+                            }
+                            .focus_text {
+                                word-break: keep-all;
+                                white-space: nowrap;
+                                margin-top: 4px;
+                                color: #999;
+                                top: 100%;
+                                left: 0;
+                                position: absolute;
+                                line-height: 1.5;
+                                display: none;
+                                font-size: 12px;
+                            }
+                        }
+                        .phonecode {
+                            width: 148px;
+                            height: 43px;
+                            padding: 0 8px;
+                            margin-left: 10px; 
+                        }
+                    }
+                    &>p{
+                        margin: 10px 0;
+                        padding: 0;
+                        color: #333;
+                    }
+                    
+                }
+                //共用登录按钮
+                .loginbtn{
+                        display: block;
+                        width: 100%;
+                        background: #F8296D;
+                        text-align: center;
+                        line-height: 40px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        cursor: pointer;
+                        padding: 0 30px;
+                        height: 40px;
+                        color: #fff;
+                        border: 0;
+                        margin-bottom: 10px;
+                        outline: 0; 
+                    }
+                    //点击后显示文字
+                    .focus_text {
+                            word-break: keep-all;
+                            white-space: nowrap;
+                            margin-top: 4px;
+                            color: #999;
+                            top: 100%;
+                            left: 0;
+                            position: absolute;
+                            line-height: 1.5;
+                            display: n;
+                            font-size: 12px;
+                        }
+                .login-user-form{
+                    display: none;
+                    box-sizing: border-box;
+                    width: 300px;
+                    height: 288px;
+                    .textbox_ui{
+                        width: 300px;
+                        height: 44px;
+                        margin-bottom: 26px;
+                        position: relative;
+                        #username{
+                            width: 300px;
+                            background: url("../img/login/sign.png") no-repeat;
+                            background-position: 5px 0;
+                            box-shadow: none;
+                            border: 1px solid #CFCFCF;
+                            vertical-align: middle;
+                            padding: 10px 8px;
+                            padding-left: 38px;
+                            line-height: 1.5;
+                            font-size: 14px;
+                            outline: 0;
+                            height: auto;
+                        }
+                        .focus_text {
+                            word-break: keep-all;
+                            white-space: nowrap;
+                            margin-top: 4px;
+                            color: #999;
+                            top: 100%;
+                            left: 0;
+                            position: absolute;
+                            line-height: 1.5;
+                            display: none;
+                            font-size: 12px;
+                        }
+                    }
+                    .textbox_ui_pass{
+                        width: 300px;
+                        height: 44px;
+                        margin-bottom: 26px;
+                        position: relative;
+                        #login_password{
+                            width: 300px;
+                            background: url("../img/login/sign.png") no-repeat;
+                            background-position: 5px -50px;
+                            box-shadow: none;
+                            border: 1px solid #CFCFCF;
+                            vertical-align: middle;
+                            padding: 10px 8px;
+                            padding-left: 38px;
+                            line-height: 1.5;
+                            font-size: 14px;
+                            outline: 0;
+                            height: auto;
+                        }
+                        .focus_text {
+                            word-break: keep-all;
+                            white-space: nowrap;
+                            margin-top: 4px;
+                            color: #999;
+                            top: 100%;
+                            left: 0;
+                            position: absolute;
+                            line-height: 1.5;
+                            display: none;
+                            font-size: 12px;
+                        }
+                    }
+                    .complete_pass{
+                        width: 300px;
+                        height: 46px;
+                        a{
+                            border: 1px solid #d7d7d7;
+                            width: 300px;
+                            height: 44px;
+                            line-height: 44px;
+                            padding-left: 100px;
+                            display: block;
+                            position: relative;
+                            font-size: 14px;
+                            color: #444;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            color: #ed145b;
+                        }
+                    }
+                    &>P{
+                        margin: 10px 0;
+                        a{
+                           float: right; 
+                        }
+                        label{
+                            display: inline-block;
+                            max-width: 100%;
+                            margin-bottom: 5px;
+                            font-weight: 700;
+                            input{
+                                margin: 4px 0 0;
+                            }
+                        }
+                    }
+                }
+                .otherMethod{
+                    width: 300px;
+                    height: 86px;
+                    &>div{
+                        width: 300px;
+                        height: 33px;
+                        padding-top: 5px;
+                        font-size: 12px;
+                    }
+                    p{
+                        width: 300px;
+                        height: 43px;
+                        margin-bottom: 15px;
+                        overflow: hidden;
+                       a:nth-child(1){
+                           display: inline-block;
+                           width: 43px;
+                           height: 43px;
+                           margin-right: 15px;
+                           padding-bottom: 5px;
+                           background: url(../img/login/icon.jpg) no-repeat;
+                           float: left;
+                           text-decoration: none;
+                           opacity: 0.6;
+                           &:hover{
+                               opacity:1;
+                           }
+                        }
+                        a:nth-child(2){
+                           display: inline-block;
+                           width: 43px;
+                           height: 43px;
+                           margin-right: 15px;
+                           background: url(../img/login/icon.jpg) no-repeat;
+                           background-position: -57px 0;
+                           float: left;
+                           text-decoration: none;
+                           opacity: 0.6;
+                           &:hover{
+                               opacity:1;
+                           }
+                       } 
+                       a:nth-child(3){
+                           display: inline-block;
+                           width: 43px;
+                           height: 43px;
+                           margin-right: 15px;
+                           background: url(../img/login/icon.jpg) no-repeat;
+                           background-position: -114px 0;
+                           float: left;
+                           text-decoration: none;
+                           opacity: 0.6;
+                           &:hover{
+                               opacity:1;
+                           }
+                       }     
+                       a:nth-child(4){
+                           display: inline-block;
+                           width: 43px;
+                           height: 43px;
+                           margin-right: 15px;
+                           background: url(../img/login/icon.jpg) no-repeat;
+                           background-position: -169px 0;
+                           float: left;
+                           text-decoration: none;
+                           opacity: 0.6;
+                           &:hover{
+                               opacity:1;
+                           }
+                       }
+                       a:nth-child(5){
+                           display: inline-block;
+                           width: 43px;
+                           height: 43px;
+                           margin-right: 15px;
+                           background: url(../img/login/icon.jpg) no-repeat;
+                           background-position: -228px 0;
+                           float: left;
+                           text-decoration: none;
+                           opacity: 0.6;
+                           &:hover{
+                               opacity:1;
+                           }
+                       }                  
+                    }
+                }
+                .shadowLeft{
+                    position: absolute;
+                    height: 100%;
+                    width: 8px;
+                    top: 0;
+                    left: -9px;
+                    background: url(../img/login/shadow.png) no-repeat center;
+                }
+                .shadowRight{
+                    position: absolute;
+                    height: 100%;
+                    width: 8px;
+                    top: 0;
+                    right: -3px;
+                    background: url(../img/login/shadow.png) no-repeat center;
+                }
+            }
+        }
+    }
+}
+#footer{
+    width: 100%;
+    height: 220px;
+    padding-top: 5px;
+    background: none;
+    border-top: none;
+    position: relative;
+    bottom: -1px;
+    font-size: 12px;
+    .footer_con{
+        width: 1090px;
+        height: 214px;
+        background: #fff;
+        line-height: 20px;
+        padding-bottom: 80px;
+        color: #000;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        .footer_conDetail{
+            width: 1090px;
+            height: 78px;
+            padding: 14px 0 18px;
+            line-height: 23px;
+            text-align: center; 
+            a{
+                color: #333;    
+            } 
+        }
+        &>p:nth-child(2){
+            width: 1090px;
+            height: 56px;
+            a{
+                width: 126px;
+                height: 50px;
+                overflow: hidden;
+                display: inline-block;
+                margin-right: 8px;
+                background: url(../img/login/footer_btm_icon.png) no-repeat;
+                margin: 0 4px;
+                border-bottom: 1px solid #d7d7d7;
+            }
+            a:nth-child(2){
+                background-position: -126px 0;
+            }
+            a:nth-child(3){
+                background-position: -252px 0;
+            }
+            a:nth-child(4){
+                background-position: -378px 0;
+            }
+            a:nth-child(5){
+                background-position: -504px 0;
+            }
+        }
+    }
+}

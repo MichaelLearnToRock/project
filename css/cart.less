@@ -1,0 +1,493 @@
+/******************************* CSS Reset **************************************/
+html,
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+input,
+img {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "微软雅黑"; //  background: #f7f7f7;
+    font-size: 12px;
+}
+img {
+    border: none;
+    /*兼容IE，防止图片超链接时，IE浏览器出现边框*/
+}
+em {
+    font-style: normal;
+    font-weight: 400;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ed145b;
+}
+/******************************* CSS Reset **************************************/
+/******************************* Common *****************************************/
+@totalWidth: 100%;
+.setSize(@setWidth:100%;@setHeight:0) {
+    width: @setWidth;
+    height: @setHeight;
+}
+.setBackground(@setContent) {
+    background: @setContent;
+}
+.setPosition(@detailPosition:relative;@top:0;@left:0;) {
+    position: @detailPosition;
+    top: @top;
+    left: @left;
+}
+.setFloat(@float:left) {
+    float: @float;
+}
+.setMargin(@margin:0px;@padding:0px;@border:0px) {
+    margin: @margin;
+    padding: @padding;
+    border: @border;
+}
+.setFont(@fontSize:12px;@color:#000) {
+    font-size: @fontSize;
+    color: @color;
+}
+.setDisplay(@display:block) {
+    display: @display;
+}
+.spaceX {
+    .setSize(100%;15px);
+    clear: both;
+}
+.spaceY {
+    .setSize(15px;100%);
+    clear: both;
+}
+.activeLi {
+    .setBackground(#666);
+    border: solid 1px #BBB;
+    border-bottom: none;
+    font-weight: 900;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+.icon_small {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-style: normal;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+/******************************* Common *****************************************/
+#header {
+    background: white;
+    .setSize(100%;100px);
+    .cart_top {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        color: #999999;
+        width: 960px;
+        margin: 0 auto;
+        .user_box {
+            position: absolute;
+            right: 0;
+            top: 0;
+            >div {
+                a {
+                    color: #ed145b;
+                    text-decoration: none;
+                }
+                span {
+                    font-style: normal;
+                    color: #dddddd;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .cart_header_box {
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #e5e5e5;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        padding-bottom: 15px;
+        .cart_header {
+            width: 960px;
+            height: 50px;
+            margin: 0 auto;
+            .logo_box {
+                float: left;
+                border: 0;
+                cursor: pointer;
+            }
+            .order_progress {
+                width: 377px;
+                height: 48px;
+                background: url("../img/cart/order_path.png") no-repeat;
+                background-position: -2px -2px;
+                float: right;
+            }
+        }
+    }
+}
+#container {
+    background: #fff;
+    min-height: 450px;
+    margin: 0 auto auto;
+    padding: 15px 0;
+    .content_show_wrapper {
+        width: 100%;
+        height: 620px;
+        .group_show {
+            width: 960px;
+            height: 620px;
+            margin: 0 auto;
+            .content_header {
+                width: 960px;
+                height: 53px;
+                margin-top: 5px;
+                .cart_timer_wrapper {
+                    width: 429px;
+                    float: left;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    .icon_small {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        line-height: 18px;
+                        font-style: normal;
+                        vertical-align: -5px;
+                        background: url("../img/cart/icons.png") no-repeat;
+                        background-position: -8px -5px;
+                    }
+                    .cart_timer_counting {
+                        width: 362px;
+                        height: 18px;
+                        .daoxuTimeDetail {
+                            display: inline-block;
+                            text-align: center;
+                            width: 90px;
+                            height: 18px;
+                            color: #ed145b;
+                        }
+                    }
+                    .cart_timer_out {
+                        display: none;
+                        line-height: 24px;
+                        font-size: 14px;
+                    }
+                    .cart_timer_tip {
+                        position: relative;
+                        text-decoration: none;
+                        color: #ed145b;
+                    }
+                }
+                .common_shippment {
+                    width: 960px;
+                    height: 23px;
+                    padding-top: 5px;
+                    color: #fa8801;
+                    clear: both;
+                    &>span {
+                        width: 35px;
+                        padding-left: 5px;
+                        background: url("../img/cart/icons.png") no-repeat;
+                        background-position: -2px -86px;
+                    }
+                }
+            }
+            .groups_wrapper {
+                width: 960px;
+                .cart_group_item {
+                    width: 100%;
+                    margin: 10px 0 0;
+                    font-size: 12px;
+                    border: 1px solid #eee;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    th {
+                        height: 34px;
+                        padding: 0;
+                        text-align: center;
+                        font-weight: 400;
+                        border-bottom: 1px solid #eee;
+                        background: #fafafa;
+                        color: #000;
+                    }
+                    .cart_overview {
+                        width: 56%;
+                        .cart_group_header {
+                            height: 34px;
+                            line-height: 34px;
+                            text-align: left;
+                            border-left: 5px solid #ed145b;
+                            h2 {
+                                display: inline-block;
+                                margin: 0 5px 0 2px;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .cart_num,
+                    .cart_price {
+                        width: 12%;
+                    }
+                    .cart_total,
+                    .cart_option {
+                        width: 10%;
+                    }
+                    .cart_item {
+                        width: 959px;
+                        height: 100px;
+                        border-collapse: collapse;
+                        border-bottom: 1px dotted #ddd;
+                        font-size: 12px;
+                        .cart_item_desc {
+                            width: 537px;
+                            height: 100px;
+                            text-align: left;
+                            .cart_item_desc_wrapper {
+                                width: 496px;
+                                height: 80px;
+                                margin: 0 0 0 30px;
+                                padding: 20px 0 0 11px;
+                                .cart_item_pic {
+                                    width: 60px;
+                                    height: 60px;
+                                    position: relative;
+                                    float: left;
+                                    margin: 0 10px 20px 0;
+                                    overflow: hidden;
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        border: 0;
+                                    }
+                                }
+                                .cart_item_global{
+                                    float: left;
+                                    height: 18px;
+                                    margin: 0 2px 0 0;
+                                    line-height: 16px;
+                                    color: #851b97;
+                                }
+                                .cart_item_link{
+                                    display: inline-block;
+                                    max-width: 250px;
+                                    height: 18px;
+                                    line-height: 16px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                .sku_info{
+                                    height: 22px;
+                                    line-height: 22px;
+                                    color: #999;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                        td:nth-child(2){
+                            width: 115px;
+                            height: 100px;
+                            .cart_item_num{
+                                width: 80px;
+                                height: 40px;
+                                line-height: 40px;
+                                padding: 20px 20px 20px 20px;
+                                text-align: center;
+                                position: relative;
+                               
+                                .decrease_one{
+                                    display: inline-block;
+                                    width: 21px;
+                                    height: 20px;
+                                    color: #555;
+                                    line-height: 20px;
+                                    cursor: pointer;
+                                    border: 1px solid #e0e0e0;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                }
+                                .item_quantity{
+                                    width: 25px;
+                                    height: 20px;
+                                    text-align: center;
+                                    border: 0;
+                                    border-color: #e0e0e0;
+                                }
+                                .increase_one{
+                                    display: inline-block;
+                                    width: 21px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    color: #555;
+                                    border: 1px solid #e0e0e0;
+                                    cursor: pointer;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                }
+                            }
+                        }
+                        td:nth-child(5){
+                            text-align: center;
+                            button{
+                                display:inline-block ;
+                                width: 20px;
+                                height: 20px; 
+                                color: #ccc;
+                                border: 0;
+                                background: url(../img/cart/icons.png) no-repeat;
+                                background-position: -36px -27px;
+                                opacity: 0.6;
+                                cursor: pointer;
+                                &:hover{
+                                     opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    //tbody end
+                   .allPrice{
+                        width: 959px;
+                        height: 32px; 
+                           border-bottom: solid 1px #DDD;
+//                      td:nth-child(1){
+//                          height: 33px;
+//                          line-height: 33px;
+//                           padding-bottom: 2px;
+//                      }
+                        td:nth-child(1),td:nth-child(2),td:nth-child(3){
+                            height: 32px;
+                          line-height: 32px;
+                            color: #999;
+                            padding-bottom: 0px;
+                            span{
+                                line-height: 32px;
+                                color: #ed145b;
+                                font-weight: 700;
+                                font-size: 14px;
+                            }
+                        } 
+                   }
+                  
+                }
+                 .gotoBuy{
+                        width: 958px;
+                        height: 48px;
+                        display: inline-block;
+                        margin: 10px 0;
+                        line-height: 48px;
+                       // border: 1px solid #eee;
+                        .removeAll{
+                            width: 145px;
+                            height: 100%;
+                            margin: 0 0 0 10px;
+                            float: right;
+                            font-size: 18px;
+                            display: inline-block;
+                            color: #fff;
+                            background: -webkit-linear-gradient(top,#fa417d,#f0145c);
+                            background: -moz-linear-gradient(top,#fa417d,#f0145c);
+                            background: linear-gradient(top,#fa417d,#f0145c);
+                        }
+                   } 
+            }
+        }
+    }
+}
+#footer {
+    width: 100%;
+    height: 220px;
+    padding-top: 5px;
+    background: #f2f2f2;
+    border-top: none;
+    position: relative;
+    bottom: -1px;
+    font-size: 12px;
+    .footer_con {
+        width: 1090px;
+        height: 214px;
+        background: #f2f2f2;
+        line-height: 20px; //      padding-bottom: 80px;
+        color: #000;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        .footer_conDetail {
+            width: 1090px;
+            height: 78px;
+            padding: 14px 0 18px;
+            line-height: 23px;
+            text-align: center;
+            a {
+                color: #333;
+            }
+        }
+        &>p:nth-child(2) {
+            width: 1090px;
+            height: 56px;
+            a {
+                width: 126px;
+                height: 50px;
+                overflow: hidden;
+                display: inline-block;
+                margin-right: 8px;
+                background: url("../img/login/footer_btm_icon.png") no-repeat;
+                margin: 0 4px;
+                border-bottom: 1px solid #d7d7d7;
+            }
+            a:nth-child(2) {
+                background-position: -126px 0;
+            }
+            a:nth-child(3) {
+                background-position: -252px 0;
+            }
+            a:nth-child(4) {
+                background-position: -378px 0;
+            }
+            a:nth-child(5) {
+                background-position: -504px 0;
+            }
+        }
+    }
+}
